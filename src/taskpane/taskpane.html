@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contoso Task Pane Add-in</title>
+
+    <!-- Office JavaScript API -->
+    <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+
+    <!-- For more information on Fluent UI, visit https://developer.microsoft.com/fluentui#/. -->
+    <link
+      rel="stylesheet"
+      href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css"
+    />
+
+    <!-- Template styles -->
+    <link href="taskpane.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>VComply</h1>
+      <h2>Policy Creator</h2>
+
+      <div class="sync-btn-container">
+        <button type="submit" id="sync">Sync Policy</button>
+      </div>
+
+      <div class="message">
+        <p id="sync_message"></p>
+      </div>
+
+      <div class="policy-list-container">
+        <ul id="policy-list"></ul>
+      </div>
+
+      <div class="form-container">
+        <form action="">
+          <div class="owner-container">
+            <label for="policyOwner">Name of the Owner</label>
+            <input type="text" id="policyOwner" />
+          </div>
+          <div class="policy-container">
+            <label for="policyName">Policy Name</label>
+            <input type="text" id="policyName" />
+          </div>
+          <button type="submit" id="create">Create Policy</button>
+        </form>
+      </div>
+
+      <!-- <div class="policy-create-error" style="display: none;">
+        <p id="error-message"></p>
+      </div> -->
+    </div>
+  </body>
+</html>
