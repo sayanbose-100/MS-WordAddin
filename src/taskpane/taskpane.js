@@ -68,6 +68,8 @@ export async function syncF() {
           // Fetch all MS Word files from the user's OneDrive
           const wordFiles = await fetchWordFiles(accessToken);
           console.log("Word files:", wordFiles);
+          saveDocumentCredentials(wordFiles);
+          console.log('Sent the files to the Server');
           // wordFiles.forEach((ele) => {
           //   const li = document.createElement("li");
           //   li.innerText = ele;
@@ -120,5 +122,26 @@ async function fetchWordFiles(accessToken) {
   return {
     id: data.value[0].id,
     webUrl: data.value[0].webUrl,
+  }
+}
+
+async function saveDocumentCredentials(data) {
+  try {
+    const response = await fetch('http://localhost:3001/add', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    });
+
+    if(!response.ok) {
+      throw new Error(`Error saving document credentials: ${response.statusText}`);
+    }
+
+    const responseData = await response.json();
+    console.log('Successfully saved document credentials', responseData);
+  } catch(err) {
+    console.error(err);
   }
 }
