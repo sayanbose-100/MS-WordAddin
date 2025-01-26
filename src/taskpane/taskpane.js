@@ -68,11 +68,11 @@ export async function syncF() {
           // Fetch all MS Word files from the user's OneDrive
           const wordFiles = await fetchWordFiles(accessToken);
           console.log("Word files:", wordFiles);
-          wordFiles.forEach((ele) => {
-            const li = document.createElement("li");
-            li.innerText = ele;
-            policyList.appendChild(li);
-          });
+          // wordFiles.forEach((ele) => {
+          //   const li = document.createElement("li");
+          //   li.innerText = ele;
+          //   policyList.appendChild(li);
+          // });
 
         } catch (error) {
           console.error("Authentication error:", error);
@@ -85,7 +85,17 @@ export async function syncF() {
 }
 
 async function fetchWordFiles(accessToken) {
-  const endpoint = "https://graph.microsoft.com/v1.0/me/drive/root/search(q='.docx')";
+
+  // const documentUrl = Office.context.document.url;
+  // const documentIdMatch = documentUrl.match(/sourcedoc=\{([^}]+)\}/);
+  // const documentId = documentIdMatch ? documentIdMatch[1] : null;
+  // console.log(documentId);
+
+  
+
+  // const endpoint = "https://graph.microsoft.com/v1.0/me/drive/root/search(q='.docx')";
+  const endpoint = `https://graph.microsoft.com/v1.0/me/drive/recent`;
+  
   const response = await fetch(endpoint, {
     method: "GET",
     headers: {
@@ -99,6 +109,16 @@ async function fetchWordFiles(accessToken) {
   }
 
   const data = await response.json();
-  const wordFileLinks = data.value.map((file) => file.webUrl);
-  return wordFileLinks;
+  // const wordFileLinks = data.value.map((file) => file.webUrl);
+  // return wordFileLinks;
+  // return {
+  //   id: data.id,
+  //   name: data.name,
+  //   webUrl: data.webUrl,
+  // }
+  // return data;
+  return {
+    id: data.value[0].id,
+    webUrl: data.value[0].webUrl,
+  }
 }
