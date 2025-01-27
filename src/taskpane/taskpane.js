@@ -1,9 +1,10 @@
 const { PublicClientApplication } = require("@azure/msal-browser");
 
-const policies = [];
+let policies = [];
 
 const fetchPolicies = async (userEmail) => {
-  
+  const policyContainer = document.getElementById("policies_container");
+
   const response = await fetch(`http://localhost:3001/policies/${userEmail}`,{
     method: "GET",
     headers: {
@@ -15,8 +16,24 @@ const fetchPolicies = async (userEmail) => {
     throw new Error(`Error fetching policies: ${response.statusText}`);
   }
   const data = await response.json();
-  // policies = data || [];
-  console.log(data);
+  if(data){
+    data.map((ele) => policies.push(ele));
+  }
+  console.log("Policies: ",policies);
+  if(policies.length > 0) {
+    const select = document.createElement("select");
+    select.id = "policies";
+    select.title = "policies";
+
+    policies.forEach((policy) => {
+    const option = document.createElement("option");
+    option.value = `${policy.policyId}`;
+    option.innerText = `${policy.policyName}`;
+    select.appendChild(option);
+    // console.log(policy);
+    })
+    policyContainer.appendChild(select);
+  }
 }
 
 const msalConfig = {
