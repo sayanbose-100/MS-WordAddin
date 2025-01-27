@@ -1,6 +1,23 @@
 const { PublicClientApplication } = require("@azure/msal-browser");
-// const { jwtDecode } = require("jwt-decode");
-// const {decode} = require('jwt-js-decode');
+
+const policies = [];
+
+const fetchPolicies = async (userEmail) => {
+  
+  const response = await fetch(`http://localhost:3001/policies/${userEmail}`,{
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
+
+  if (!response.ok) {
+    throw new Error(`Error fetching policies: ${response.statusText}`);
+  }
+  const data = await response.json();
+  // policies = data || [];
+  console.log(data);
+}
 
 const msalConfig = {
   auth: {
@@ -174,6 +191,7 @@ async function getUserEmail(accessToken) {
             const data = await response.json();
             const userEmail = data.mail || data.userPrincipalName;
             console.log("User email: " + userEmail);
+            fetchPolicies(userEmail);
           } catch (error) {
             console.error("Authentication error:", error);
           }
