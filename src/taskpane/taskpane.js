@@ -1,4 +1,6 @@
 const { PublicClientApplication } = require("@azure/msal-browser");
+// const { jwtDecode } = require("jwt-decode");
+const {decode} = require('jwt-js-decode');
 
 const msalConfig = {
   auth: {
@@ -18,6 +20,7 @@ Office.onReady((info) => {
   if (info.host === Office.HostType.Word) {
     document.getElementById("create").onclick = create;
     document.getElementById("sync").onclick = syncF;
+    document.getElementById("emailFetch").onclick = getUserEmail;
   }
 });
 
@@ -41,7 +44,7 @@ export async function create() {
 
 export async function syncF() {
   const syncMessage = document.getElementById("sync_message");
-  const policyList = document.getElementById("policy-list")
+  const policyList = document.getElementById("policy-list");
   initializeMsal()
     .then(() => {
       return Word.run(async (context) => {
@@ -66,16 +69,15 @@ export async function syncF() {
           syncMessage.style.color = "green";
 
           // Fetch all MS Word files from the user's OneDrive
-          const wordFiles = await fetchWordFiles(accessToken);
+          const wordFiles = await fetchCurrentWordFiles(accessToken);
           console.log("Word files:", wordFiles);
           saveDocumentCredentials(wordFiles);
-          console.log('Sent the files to the Server');
+          console.log("Sent the files to the Server");
           // wordFiles.forEach((ele) => {
           //   const li = document.createElement("li");
           //   li.innerText = ele;
           //   policyList.appendChild(li);
           // });
-
         } catch (error) {
           console.error("Authentication error:", error);
         }
@@ -86,18 +88,15 @@ export async function syncF() {
     });
 }
 
-async function fetchWordFiles(accessToken) {
-
+async function fetchCurrentWordFiles(accessToken) {
   // const documentUrl = Office.context.document.url;
   // const documentIdMatch = documentUrl.match(/sourcedoc=\{([^}]+)\}/);
   // const documentId = documentIdMatch ? documentIdMatch[1] : null;
   // console.log(documentId);
 
-  
-
   // const endpoint = "https://graph.microsoft.com/v1.0/me/drive/root/search(q='.docx')";
   const endpoint = `https://graph.microsoft.com/v1.0/me/drive/recent`;
-  
+
   const response = await fetch(endpoint, {
     method: "GET",
     headers: {
@@ -122,26 +121,59 @@ async function fetchWordFiles(accessToken) {
   return {
     id: data.value[0].id,
     webUrl: data.value[0].webUrl,
-  }
+  };
 }
 
 async function saveDocumentCredentials(data) {
   try {
-    const response = await fetch('http://localhost:3001/add', {
-      method: 'POST',
+    const response = await fetch("http://localhost:3001/add", {
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json'
+        "Content-Type": "application/json",
       },
-      body: JSON.stringify(data)
+      body: JSON.stringify(data),
     });
 
-    if(!response.ok) {
+    if (!response.ok) {
       throw new Error(`Error saving document credentials: ${response.statusText}`);
     }
 
     const responseData = await response.json();
-    console.log('Successfully saved document credentials', responseData);
-  } catch(err) {
+    console.log("Successfully saved document credentials", responseData);
+  } catch (err) {
     console.error(err);
   }
+}
+
+async function getUserEmail(accessToken) {
+  initializeMsal()
+    .then(() => {
+      return Word.run(async (context) => {
+        try {
+          const loginResponse = await msalInstance.loginPopup({
+            scopes: ["Files.ReadWrite.All"],
+          });
+
+          const account = msalInstance.getAccount(loginResponse.account.username);
+          msalInstance.setActiveAccount(account);
+
+          const tokenResponse = await msalInstance.acquireTokenSilent({
+            scopes: ["Files.ReadWrite.All"],
+            account: account,
+          });
+
+          const accessToken = tokenResponse.accessToken;
+          // console.log(accessToken);
+          const decodeToken = decode(accessToken)
+          console.log(decodeToken.payload);
+          const userEmail = decodeToken.unique_name;
+          console.log("user email: ", userEmail);
+        } catch (error) {
+          console.error("Authentication error:", error);
+        }
+      });
+    })
+    .catch(() => {
+      console.error("MSAL initialization failed");
+    });
 }
