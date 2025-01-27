@@ -1,6 +1,6 @@
 const { PublicClientApplication } = require("@azure/msal-browser");
 // const { jwtDecode } = require("jwt-decode");
-const {decode} = require('jwt-js-decode');
+// const {decode} = require('jwt-js-decode');
 
 const msalConfig = {
   auth: {
@@ -89,12 +89,6 @@ export async function syncF() {
 }
 
 async function fetchCurrentWordFiles(accessToken) {
-  // const documentUrl = Office.context.document.url;
-  // const documentIdMatch = documentUrl.match(/sourcedoc=\{([^}]+)\}/);
-  // const documentId = documentIdMatch ? documentIdMatch[1] : null;
-  // console.log(documentId);
-
-  // const endpoint = "https://graph.microsoft.com/v1.0/me/drive/root/search(q='.docx')";
   const endpoint = `https://graph.microsoft.com/v1.0/me/drive/recent`;
 
   const response = await fetch(endpoint, {
@@ -146,34 +140,47 @@ async function saveDocumentCredentials(data) {
 }
 
 async function getUserEmail(accessToken) {
-  initializeMsal()
-    .then(() => {
-      return Word.run(async (context) => {
-        try {
-          const loginResponse = await msalInstance.loginPopup({
-            scopes: ["Files.ReadWrite.All"],
-          });
+  return Word.run(async (context) => {
+    initializeMsal()
+      .then(() => {
+        return Word.run(async (context) => {
+          try {
+            const loginResponse = await msalInstance.loginPopup({
+              scopes: ["Files.ReadWrite.All"],
+            });
 
-          const account = msalInstance.getAccount(loginResponse.account.username);
-          msalInstance.setActiveAccount(account);
+            const account = msalInstance.getAccount(loginResponse.account.username);
+            msalInstance.setActiveAccount(account);
 
-          const tokenResponse = await msalInstance.acquireTokenSilent({
-            scopes: ["Files.ReadWrite.All"],
-            account: account,
-          });
+            const tokenResponse = await msalInstance.acquireTokenSilent({
+              scopes: ["Files.ReadWrite.All"],
+              account: account,
+            });
 
-          const accessToken = tokenResponse.accessToken;
-          // console.log(accessToken);
-          const decodeToken = decode(accessToken)
-          console.log(decodeToken.payload);
-          const userEmail = decodeToken.unique_name;
-          console.log("user email: ", userEmail);
-        } catch (error) {
-          console.error("Authentication error:", error);
-        }
+            const accessToken = tokenResponse.accessToken;
+
+            const endpoint = `https://graph.microsoft.com/v1.0/me`;
+
+            const response = await fetch(endpoint, {
+              method: "GET",
+              headers: {
+                Authorization: `Bearer ${accessToken}`,
+                "Content-Type": "application/json",
+              },
+            });
+            if (!response.ok) {
+              throw new Error(`Error fetching user email: ${response.statusText}`);
+            }
+            const data = await response.json();
+            const userEmail = data.mail || data.userPrincipalName;
+            console.log("User email: " + userEmail);
+          } catch (error) {
+            console.error("Authentication error:", error);
+          }
+        });
+      })
+      .catch(() => {
+        console.error("MSAL initialization failed");
       });
-    })
-    .catch(() => {
-      console.error("MSAL initialization failed");
-    });
+  });
 }

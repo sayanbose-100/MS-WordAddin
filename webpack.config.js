@@ -25,9 +25,6 @@ module.exports = async (env, options) => {
     },
     resolve: {
       extensions: [".html", ".js"],
-      fallback: {
-        crypto: false,
-      },
     },
     module: {
       rules: [
