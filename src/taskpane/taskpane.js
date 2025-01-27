@@ -1,6 +1,7 @@
 const { PublicClientApplication } = require("@azure/msal-browser");
 
 let policies = [];
+let selectedPolicyId = "";
 
 const fetchPolicies = async (userEmail) => {
   const policyContainer = document.getElementById("policies_container");
@@ -20,7 +21,11 @@ const fetchPolicies = async (userEmail) => {
     data.map((ele) => policies.push(ele));
   }
   console.log("Policies: ",policies);
-  if(policies.length > 0) {
+  if(policies.length == 1) {
+    selectedPolicyId = policies[0].policyId;
+    console.log("Selected Policy: ", selectedPolicyId);
+  }
+  if(policies.length > 1) {
     const select = document.createElement("select");
     select.id = "policies";
     select.title = "policies";
@@ -154,6 +159,10 @@ async function fetchCurrentWordFiles(accessToken) {
 
 async function saveDocumentCredentials(data) {
   try {
+    const payLoad = {
+      policyId: selectePolicyId,
+      webUrl: data.webUrl,
+    }
     const response = await fetch("http://localhost:3001/add", {
       method: "POST",
       headers: {
