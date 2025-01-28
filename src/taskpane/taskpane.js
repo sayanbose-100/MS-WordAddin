@@ -21,11 +21,11 @@ const fetchPolicies = async (userEmail) => {
     data.map((ele) => policies.push(ele));
   }
   console.log("Policies: ",policies);
-  if(policies.length == 1) {
-    selectedPolicyId = policies[0].policyId;
-    console.log("Selected Policy: ", selectedPolicyId);
-  }
-  if(policies.length > 1) {
+  // if(policies.length == 1) {
+  //   selectedPolicyId = policies[0].policyId;
+  //   console.log("Selected Policy: ", selectedPolicyId);
+  // }
+  if(policies.length > 0) {
     const select = document.createElement("select");
     select.id = "policies";
     select.title = "policies";
@@ -57,9 +57,11 @@ async function initializeMsal() {
 
 Office.onReady((info) => {
   if (info.host === Office.HostType.Word) {
-    document.getElementById("create").onclick = create;
-    document.getElementById("sync").onclick = syncF;
-    document.getElementById("emailFetch").onclick = getUserEmail;
+    // document.getElementById("create").onclick = create;
+    // document.getElementById("sync").onclick = syncF;
+    // document.getElementById("emailFetch").onclick = getUserEmail;
+    document.getElementById("linkAcc").onclick = getUserEmail;
+    
   }
 });
 
@@ -228,3 +230,5 @@ async function getUserEmail(accessToken) {
       });
   });
 }
+
+// graph API usage to generate a shareable link
