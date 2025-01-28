@@ -1,0 +1,1634 @@
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('95d937b1-d49a-4ce9-ab85-e4b704f1a2a6')/drive/root/children",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET me/drive/root/children?$select=audio,bundle",
+    "value": [
+        {
+            "createdDateTime": "2025-01-03T10:33:54Z",
+            "eTag": "\"{52A1F2B9-1586-46F7-8577-8396A69F95DD},1\"",
+            "id": "01VVF7TBVZ6KQVFBQV65DIK54DS2TJ7FO5",
+            "lastModifiedDateTime": "2025-01-03T10:33:54Z",
+            "name": "Apps",
+            "webUrl": "https://vcomplytechnologies-my.sharepoint.com/personal/sayan_v-comply_com/Documents/Apps",
+            "cTag": "\"c:{52A1F2B9-1586-46F7-8577-8396A69F95DD},0\"",
+            "size": 0,
+            "createdBy": {
+                "application": {
+                    "id": "4765445b-32c6-49b0-83e6-1d93765276ca",
+                    "displayName": "OfficeHome"
+                },
+                "user": {
+                    "email": "sayan@v-comply.com",
+                    "id": "95d937b1-d49a-4ce9-ab85-e4b704f1a2a6",
+                    "displayName": "SAYAN BOSE"
+                }
+            },
+            "lastModifiedBy": {
+                "application": {
+                    "id": "4765445b-32c6-49b0-83e6-1d93765276ca",
+                    "displayName": "OfficeHome"
+                },
+                "user": {
+                    "email": "sayan@v-comply.com",
+                    "id": "95d937b1-d49a-4ce9-ab85-e4b704f1a2a6",
+                    "displayName": "SAYAN BOSE"
+                }
+            },
+            "parentReference": {
+                "driveType": "business",
+                "driveId": "b!8dYvAg_OIkODvSW_1NWrylKrA8EwD0pPiGgeiwfdY4EelHvlhxDQTYNHnXOfixnh",
+                "id": "01VVF7TBV6Y2GOVW7725BZO354PWSELRRZ",
+                "name": "Documents",
+                "path": "/drive/root:",
+                "siteId": "022fd6f1-ce0f-4322-83bd-25bfd4d5abca"
+            },
+            "fileSystemInfo": {
+                "createdDateTime": "2025-01-03T10:33:54Z",
+                "lastModifiedDateTime": "2025-01-03T10:33:54Z"
+            },
+            "folder": {
+                "childCount": 0
+            },
+            "specialFolder": {
+                "name": "apps"
+            }
+        },
+        {
+            "createdDateTime": "2025-01-02T07:20:24Z",
+            "eTag": "\"{02F3EB68-1A96-4E06-865F-4B4FD233EC86},1\"",
+            "id": "01VVF7TBTI5PZQFFQ2AZHIMX2LJ7JDH3EG",
+            "lastModifiedDateTime": "2025-01-02T07:20:24Z",
+            "name": "Attachments",
+            "webUrl": "https://vcomplytechnologies-my.sharepoint.com/personal/sayan_v-comply_com/Documents/Attachments",
+            "cTag": "\"c:{02F3EB68-1A96-4E06-865F-4B4FD233EC86},0\"",
+            "size": 0,
+            "createdBy": {
+                "application": {
+                    "id": "9e4a5442-a5c9-4f6f-b03f-5b9fcaaf24b1",
+                    "displayName": "OfficeServicesManager"
+                },
+                "user": {
+                    "email": "sayan@v-comply.com",
+                    "id": "95d937b1-d49a-4ce9-ab85-e4b704f1a2a6",
+                    "displayName": "SAYAN BOSE"
+                }
+            },
+            "lastModifiedBy": {
+                "application": {
+                    "id": "9e4a5442-a5c9-4f6f-b03f-5b9fcaaf24b1",
+                    "displayName": "OfficeServicesManager"
+                },
+                "user": {
+                    "email": "sayan@v-comply.com",
+                    "id": "95d937b1-d49a-4ce9-ab85-e4b704f1a2a6",
+                    "displayName": "SAYAN BOSE"
+                }
+            },
+            "parentReference": {
+                "driveType": "business",
+                "driveId": "b!8dYvAg_OIkODvSW_1NWrylKrA8EwD0pPiGgeiwfdY4EelHvlhxDQTYNHnXOfixnh",
+                "id": "01VVF7TBV6Y2GOVW7725BZO354PWSELRRZ",
+                "name": "Documents",
+                "path": "/drive/root:",
+                "siteId": "022fd6f1-ce0f-4322-83bd-25bfd4d5abca"
+            },
+            "fileSystemInfo": {
+                "createdDateTime": "2025-01-02T07:20:24Z",
+                "lastModifiedDateTime": "2025-01-02T07:20:24Z"
+            },
+            "folder": {
+                "childCount": 0
+            },
+            "specialFolder": {
+                "name": "attachments"
+            }
+        },
+        {
+            "createdDateTime": "2025-01-03T06:11:49Z",
+            "eTag": "\"{B0A30184-1018-4D5C-9FCD-03D8CF9B110D},1\"",
+            "id": "01VVF7TBUEAGR3AGAQLRGZ7TID3DHZWEIN",
+            "lastModifiedDateTime": "2025-01-03T06:11:49Z",
+            "name": "Meetings",
+            "webUrl": "https://vcomplytechnologies-my.sharepoint.com/personal/sayan_v-comply_com/Documents/Meetings",
+            "cTag": "\"c:{B0A30184-1018-4D5C-9FCD-03D8CF9B110D},0\"",
+            "size": 51993,
+            "createdBy": {
+                "application": {
+                    "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
+                    "displayName": "Microsoft Teams"
+                },
+                "user": {
+                    "email": "sayan@v-comply.com",
+                    "id": "95d937b1-d49a-4ce9-ab85-e4b704f1a2a6",
+                    "displayName": "SAYAN BOSE"
+                }
+            },
+            "lastModifiedBy": {
+                "application": {
+                    "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
+                    "displayName": "Microsoft Teams"
+                },
+                "user": {
+                    "email": "sayan@v-comply.com",
+                    "id": "95d937b1-d49a-4ce9-ab85-e4b704f1a2a6",
+                    "displayName": "SAYAN BOSE"
+                }
+            },
+            "parentReference": {
+                "driveType": "business",
+                "driveId": "b!8dYvAg_OIkODvSW_1NWrylKrA8EwD0pPiGgeiwfdY4EelHvlhxDQTYNHnXOfixnh",
+                "id": "01VVF7TBV6Y2GOVW7725BZO354PWSELRRZ",
+                "name": "Documents",
+                "path": "/drive/root:",
+                "siteId": "022fd6f1-ce0f-4322-83bd-25bfd4d5abca"
+            },
+            "fileSystemInfo": {
+                "createdDateTime": "2025-01-03T06:11:49Z",
+                "lastModifiedDateTime": "2025-01-03T06:11:49Z"
+            },
+            "folder": {
+                "childCount": 1
+            },
+            "specialFolder": {
+                "name": "meetings"
+            }
+        },
+        {
+            "createdDateTime": "2025-01-03T07:06:10Z",
+            "eTag": "\"{E9557B68-A903-458B-8B6E-38C94CDF6DBF},1\"",
+            "id": "01VVF7TBTIPNK6SA5JRNCYW3RYZFGN63N7",
+            "lastModifiedDateTime": "2025-01-03T07:06:10Z",
+            "name": "Notebooks",
+            "webUrl": "https://vcomplytechnologies-my.sharepoint.com/personal/sayan_v-comply_com/Documents/Notebooks",
+            "cTag": "\"c:{E9557B68-A903-458B-8B6E-38C94CDF6DBF},0\"",
+            "size": 83249,
+            "createdBy": {
+                "application": {
+                    "id": "2d4d3d8e-2be3-4bef-9f87-7875a61c29de",
+                    "displayName": "2d4d3d8e-2be3-4bef-9f87-7875a61c29de"
+                },
+                "user": {
+                    "email": "sayan@v-comply.com",
+                    "id": "95d937b1-d49a-4ce9-ab85-e4b704f1a2a6",
+                    "displayName": "SAYAN BOSE"
+                }
+            },
+            "lastModifiedBy": {
+                "application": {
+                    "id": "2d4d3d8e-2be3-4bef-9f87-7875a61c29de",
+                    "displayName": "2d4d3d8e-2be3-4bef-9f87-7875a61c29de"
+                },
+                "user": {
+                    "email": "sayan@v-comply.com",
+                    "id": "95d937b1-d49a-4ce9-ab85-e4b704f1a2a6",
+                    "displayName": "SAYAN BOSE"
+                }
+            },
+            "parentReference": {
+                "driveType": "business",
+                "driveId": "b!8dYvAg_OIkODvSW_1NWrylKrA8EwD0pPiGgeiwfdY4EelHvlhxDQTYNHnXOfixnh",
+                "id": "01VVF7TBV6Y2GOVW7725BZO354PWSELRRZ",
+                "name": "Documents",
+                "path": "/drive/root:",
+                "siteId": "022fd6f1-ce0f-4322-83bd-25bfd4d5abca"
+            },
+            "fileSystemInfo": {
+                "createdDateTime": "2025-01-03T07:06:10Z",
+                "lastModifiedDateTime": "2025-01-03T07:06:10Z"
+            },
+            "folder": {
+                "childCount": 2
+            }
+        },
+        {
+            "@microsoft.graph.downloadUrl": "https://vcomplytechnologies-my.sharepoint.com/personal/sayan_v-comply_com/_layouts/15/download.aspx?UniqueId=1d957f60-2b17-40bd-a8ed-2b96c48c42b1&Translate=false&tempauth=v1.eyJzaXRlaWQiOiIwMjJmZDZmMS1jZTBmLTQzMjItODNiZC0yNWJmZDRkNWFiY2EiLCJhcHBfZGlzcGxheW5hbWUiOiJHcmFwaCBFeHBsb3JlciIsImFwcGlkIjoiZGU4YmM4YjUtZDlmOS00OGIxLWE4YWQtYjc0OGRhNzI1MDY0IiwiYXVkIjoiMDAwMDAwMDMtMDAwMC0wZmYxLWNlMDAtMDAwMDAwMDAwMDAwL3Zjb21wbHl0ZWNobm9sb2dpZXMtbXkuc2hhcmVwb2ludC5jb21ANDliZGZkNmEtMWFiYi00YTk2LWFmZWMtY2U5OWZlOGExNWMxIiwiZXhwIjoiMTczODA2MjIyNyJ9.CgoKBHNuaWQSAjY0EgsIht268KLj3z0QBRoNMjAuMTkwLjE3NS4yNCosZmhjZHFnV2tIRzlLaFhZaHBYbTljeGRYRHJ0YTBjK0FDNkNoVG0yblNMTT0woQE4AUIQoXvorRWgAEB-w_gRXnXX6EoQaGFzaGVkcHJvb2Z0b2tlblIIWyJrbXNpIl1yKTBoLmZ8bWVtYmVyc2hpcHwxMDAzMjAwNDI5ODEwNjA0QGxpdmUuY29tegEyggESCWr9vUm7GpZKEa_szpn-ihXBkgEFU0FZQU6aAQRCT1NFogESc2F5YW5Adi1jb21wbHkuY29tqgEQMTAwMzIwMDQyOTgxMDYwNLIBK215ZmlsZXMucmVhZCBhbGxmaWxlcy5yZWFkIGFsbHByb2ZpbGVzLnJlYWTIAQE.YDsC9cgH6_6wpuxUGZGxXBPQ-rOHA0OmqyEPEtSgIAE&ApiVersion=2.0",
+            "createdDateTime": "2025-01-23T09:32:16Z",
+            "eTag": "\"{1D957F60-2B17-40BD-A8ED-2B96C48C42B1},24\"",
+            "id": "01VVF7TBTAP6KR2FZLXVAKR3JLS3CIYQVR",
+            "lastModifiedDateTime": "2025-01-28T09:12:09Z",
+            "name": "AddIn-Tester.docx",
+            "webUrl": "https://vcomplytechnologies-my.sharepoint.com/personal/sayan_v-comply_com/_layouts/15/Doc.aspx?sourcedoc=%7B1D957F60-2B17-40BD-A8ED-2B96C48C42B1%7D&file=AddIn-Tester.docx&action=default&mobileredirect=true",
+            "cTag": "\"c:{1D957F60-2B17-40BD-A8ED-2B96C48C42B1},22\"",
+            "size": 10662,
+            "createdBy": {
+                "application": {
+                    "id": "4765445b-32c6-49b0-83e6-1d93765276ca",
+                    "displayName": "OfficeHome"
+                },
+                "user": {
+                    "email": "sayan@v-comply.com",
+                    "id": "95d937b1-d49a-4ce9-ab85-e4b704f1a2a6",
+                    "displayName": "SAYAN BOSE"
+                }
+            },
+            "lastModifiedBy": {
+                "user": {
+                    "email": "sayan@v-comply.com",
+                    "id": "95d937b1-d49a-4ce9-ab85-e4b704f1a2a6",
+                    "displayName": "SAYAN BOSE"
+                }
+            },
+            "parentReference": {
+                "driveType": "business",
+                "driveId": "b!8dYvAg_OIkODvSW_1NWrylKrA8EwD0pPiGgeiwfdY4EelHvlhxDQTYNHnXOfixnh",
+                "id": "01VVF7TBV6Y2GOVW7725BZO354PWSELRRZ",
+                "name": "Documents",
+                "path": "/drive/root:",
+                "siteId": "022fd6f1-ce0f-4322-83bd-25bfd4d5abca"
+            },
+            "file": {
+                "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                "hashes": {
+                    "quickXorHash": "0XXynsJziqGyMoGY2vcGAcYj/6A="
+                }
+            },
+            "fileSystemInfo": {
+                "createdDateTime": "2025-01-23T09:32:16Z",
+                "lastModifiedDateTime": "2025-01-28T09:12:09Z"
+            },
+            "shared": {
+                "scope": "users"
+            }
+        },
+        {
+            "@microsoft.graph.downloadUrl": "https://vcomplytechnologies-my.sharepoint.com/personal/sayan_v-comply_com/_layouts/15/download.aspx?UniqueId=d3be2dd7-7f3e-445e-b2c8-43f25d03d583&Translate=false&tempauth=v1.eyJzaXRlaWQiOiIwMjJmZDZmMS1jZTBmLTQzMjItODNiZC0yNWJmZDRkNWFiY2EiLCJhcHBfZGlzcGxheW5hbWUiOiJHcmFwaCBFeHBsb3JlciIsImFwcGlkIjoiZGU4YmM4YjUtZDlmOS00OGIxLWE4YWQtYjc0OGRhNzI1MDY0IiwiYXVkIjoiMDAwMDAwMDMtMDAwMC0wZmYxLWNlMDAtMDAwMDAwMDAwMDAwL3Zjb21wbHl0ZWNobm9sb2dpZXMtbXkuc2hhcmVwb2ludC5jb21ANDliZGZkNmEtMWFiYi00YTk2LWFmZWMtY2U5OWZlOGExNWMxIiwiZXhwIjoiMTczODA2MjIyNyJ9.CgoKBHNuaWQSAjY0EgsIht268KLj3z0QBRoNMjAuMTkwLjE3NS4yNCosOWk3UldZSERhb3B3eWdma1ZLYmdhRmp0akJGbWFudmZXcjMyWDRSTStJdz0woQE4AUIQoXvorRWgAEB-w_gRXnXX6EoQaGFzaGVkcHJvb2Z0b2tlblIIWyJrbXNpIl1yKTBoLmZ8bWVtYmVyc2hpcHwxMDAzMjAwNDI5ODEwNjA0QGxpdmUuY29tegEyggESCWr9vUm7GpZKEa_szpn-ihXBkgEFU0FZQU6aAQRCT1NFogESc2F5YW5Adi1jb21wbHkuY29tqgEQMTAwMzIwMDQyOTgxMDYwNLIBK215ZmlsZXMucmVhZCBhbGxmaWxlcy5yZWFkIGFsbHByb2ZpbGVzLnJlYWTIAQE.sEp8E8Y9kZn0DKDmps9pFtSud_3WuIhSpFI09elJ9AQ&ApiVersion=2.0",
+            "createdDateTime": "2025-01-04T03:14:10Z",
+            "eTag": "\"{D3BE2DD7-7F3E-445E-B2C8-43F25D03D583},3\"",
+            "id": "01VVF7TBWXFW7NGPT7LZCLFSCD6JOQHVMD",
+            "lastModifiedDateTime": "2025-01-04T03:19:46Z",
+            "name": "Book1.xlsx",
+            "webUrl": "https://vcomplytechnologies-my.sharepoint.com/personal/sayan_v-comply_com/_layouts/15/Doc.aspx?sourcedoc=%7BD3BE2DD7-7F3E-445E-B2C8-43F25D03D583%7D&file=Book1.xlsx&action=default&mobileredirect=true",
+            "cTag": "\"c:{D3BE2DD7-7F3E-445E-B2C8-43F25D03D583},3\"",
+            "size": 16861,
+            "createdBy": {
+                "user": {
+                    "email": "sayan@v-comply.com",
+                    "id": "95d937b1-d49a-4ce9-ab85-e4b704f1a2a6",
+                    "displayName": "SAYAN BOSE"
+                }
+            },
+            "lastModifiedBy": {
+                "user": {
+                    "email": "sayan@v-comply.com",
+                    "id": "95d937b1-d49a-4ce9-ab85-e4b704f1a2a6",
+                    "displayName": "SAYAN BOSE"
+                }
+            },
+            "parentReference": {
+                "driveType": "business",
+                "driveId": "b!8dYvAg_OIkODvSW_1NWrylKrA8EwD0pPiGgeiwfdY4EelHvlhxDQTYNHnXOfixnh",
+                "id": "01VVF7TBV6Y2GOVW7725BZO354PWSELRRZ",
+                "name": "Documents",
+                "path": "/drive/root:",
+                "siteId": "022fd6f1-ce0f-4322-83bd-25bfd4d5abca"
+            },
+            "file": {
+                "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                "hashes": {
+                    "quickXorHash": "PsjimATz+kBRAadx6OtYVUr0L5Q="
+                }
+            },
+            "fileSystemInfo": {
+                "createdDateTime": "2025-01-04T03:14:10Z",
+                "lastModifiedDateTime": "2025-01-04T03:19:46Z"
+            }
+        },
+        {
+            "@microsoft.graph.downloadUrl": "https://vcomplytechnologies-my.sharepoint.com/personal/sayan_v-comply_com/_layouts/15/download.aspx?UniqueId=6106841e-f8f6-4e8a-98df-a0b4b4e3f0a9&Translate=false&tempauth=v1.eyJzaXRlaWQiOiIwMjJmZDZmMS1jZTBmLTQzMjItODNiZC0yNWJmZDRkNWFiY2EiLCJhcHBfZGlzcGxheW5hbWUiOiJHcmFwaCBFeHBsb3JlciIsImFwcGlkIjoiZGU4YmM4YjUtZDlmOS00OGIxLWE4YWQtYjc0OGRhNzI1MDY0IiwiYXVkIjoiMDAwMDAwMDMtMDAwMC0wZmYxLWNlMDAtMDAwMDAwMDAwMDAwL3Zjb21wbHl0ZWNobm9sb2dpZXMtbXkuc2hhcmVwb2ludC5jb21ANDliZGZkNmEtMWFiYi00YTk2LWFmZWMtY2U5OWZlOGExNWMxIiwiZXhwIjoiMTczODA2MjIyNyJ9.CgoKBHNuaWQSAjY0EgsI8ubN8KLj3z0QBRoNMjAuMTkwLjE3NS4yNCosTVlqSUtPVmtTMC9KS20vbmlVSTkzQXJxbGl0VlF2OEp5S2cycGp3N0xsdz0woQE4AUIQoXvorRWgAEB-w_gRXnXX6EoQaGFzaGVkcHJvb2Z0b2tlblIIWyJrbXNpIl1yKTBoLmZ8bWVtYmVyc2hpcHwxMDAzMjAwNDI5ODEwNjA0QGxpdmUuY29tegEyggESCWr9vUm7GpZKEa_szpn-ihXBkgEFU0FZQU6aAQRCT1NFogESc2F5YW5Adi1jb21wbHkuY29tqgEQMTAwMzIwMDQyOTgxMDYwNLIBK215ZmlsZXMucmVhZCBhbGxmaWxlcy5yZWFkIGFsbHByb2ZpbGVzLnJlYWTIAQE.ue5jpXHDCmVA8Yx6sTsbnMiKh4prfiXwNJOW0oRkKkY&ApiVersion=2.0",
+            "createdDateTime": "2025-01-23T12:40:32Z",
+            "eTag": "\"{6106841E-F8F6-4E8A-98DF-A0B4B4E3F0A9},2\"",
+            "id": "01VVF7TBQ6QQDGD5XYRJHJRX5AWS2OH4FJ",
+            "lastModifiedDateTime": "2025-01-23T12:40:33Z",
+            "name": "Document.docx",
+            "webUrl": "https://vcomplytechnologies-my.sharepoint.com/personal/sayan_v-comply_com/_layouts/15/Doc.aspx?sourcedoc=%7B6106841E-F8F6-4E8A-98DF-A0B4B4E3F0A9%7D&file=Document.docx&action=default&mobileredirect=true",
+            "cTag": "\"c:{6106841E-F8F6-4E8A-98DF-A0B4B4E3F0A9},2\"",
+            "size": 10572,
+            "createdBy": {
+                "application": {
+                    "id": "4765445b-32c6-49b0-83e6-1d93765276ca",
+                    "displayName": "OfficeHome"
+                },
+                "user": {
+                    "email": "sayan@v-comply.com",
+                    "id": "95d937b1-d49a-4ce9-ab85-e4b704f1a2a6",
+                    "displayName": "SAYAN BOSE"
+                }
+            },
+            "lastModifiedBy": {
+                "user": {
+                    "email": "sayan@v-comply.com",
+                    "id": "95d937b1-d49a-4ce9-ab85-e4b704f1a2a6",
+                    "displayName": "SAYAN BOSE"
+                }
+            },
+            "parentReference": {
+                "driveType": "business",
+                "driveId": "b!8dYvAg_OIkODvSW_1NWrylKrA8EwD0pPiGgeiwfdY4EelHvlhxDQTYNHnXOfixnh",
+                "id": "01VVF7TBV6Y2GOVW7725BZO354PWSELRRZ",
+                "name": "Documents",
+                "path": "/drive/root:",
+                "siteId": "022fd6f1-ce0f-4322-83bd-25bfd4d5abca"
+            },
+            "file": {
+                "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                "hashes": {
+                    "quickXorHash": "zduDtcXOFjCLxbb4CibcrghjS/s="
+                }
+            },
+            "fileSystemInfo": {
+                "createdDateTime": "2025-01-23T12:40:32Z",
+                "lastModifiedDateTime": "2025-01-23T12:40:33Z"
+            }
+        },
+        {
+            "@microsoft.graph.downloadUrl": "https://vcomplytechnologies-my.sharepoint.com/personal/sayan_v-comply_com/_layouts/15/download.aspx?UniqueId=ea2d0581-8447-4871-a3a4-e3fea8cf6636&Translate=false&tempauth=v1.eyJzaXRlaWQiOiIwMjJmZDZmMS1jZTBmLTQzMjItODNiZC0yNWJmZDRkNWFiY2EiLCJhcHBfZGlzcGxheW5hbWUiOiJHcmFwaCBFeHBsb3JlciIsImFwcGlkIjoiZGU4YmM4YjUtZDlmOS00OGIxLWE4YWQtYjc0OGRhNzI1MDY0IiwiYXVkIjoiMDAwMDAwMDMtMDAwMC0wZmYxLWNlMDAtMDAwMDAwMDAwMDAwL3Zjb21wbHl0ZWNobm9sb2dpZXMtbXkuc2hhcmVwb2ludC5jb21ANDliZGZkNmEtMWFiYi00YTk2LWFmZWMtY2U5OWZlOGExNWMxIiwiZXhwIjoiMTczODA2MjIyNyJ9.CgoKBHNuaWQSAjY0EgsI8ubN8KLj3z0QBRoNMjAuMTkwLjE3NS4yNCosVVhUb2xiTWtjN0NONHBnTHIvTHpiN2FQaU1uYXdJTEdmQ3ovUEtJQjZnZz0woQE4AUIQoXvorRWgAEB-w_gRXnXX6EoQaGFzaGVkcHJvb2Z0b2tlblIIWyJrbXNpIl1yKTBoLmZ8bWVtYmVyc2hpcHwxMDAzMjAwNDI5ODEwNjA0QGxpdmUuY29tegEyggESCWr9vUm7GpZKEa_szpn-ihXBkgEFU0FZQU6aAQRCT1NFogESc2F5YW5Adi1jb21wbHkuY29tqgEQMTAwMzIwMDQyOTgxMDYwNLIBK215ZmlsZXMucmVhZCBhbGxmaWxlcy5yZWFkIGFsbHByb2ZpbGVzLnJlYWTIAQE.emIuOYiFA-X5TRrWToLkwY-hjbiFyZJS1M35BqLHaUQ&ApiVersion=2.0",
+            "createdDateTime": "2025-01-27T13:50:29Z",
+            "eTag": "\"{EA2D0581-8447-4871-A3A4-E3FEA8CF6636},5\"",
+            "id": "01VVF7TBUBAUW6UR4EOFEKHJHD72UM6ZRW",
+            "lastModifiedDateTime": "2025-01-27T13:51:13Z",
+            "name": "NewAddIn_tester.docx",
+            "webUrl": "https://vcomplytechnologies-my.sharepoint.com/personal/sayan_v-comply_com/_layouts/15/Doc.aspx?sourcedoc=%7BEA2D0581-8447-4871-A3A4-E3FEA8CF6636%7D&file=NewAddIn_tester.docx&action=default&mobileredirect=true",
+            "cTag": "\"c:{EA2D0581-8447-4871-A3A4-E3FEA8CF6636},4\"",
+            "size": 10553,
+            "createdBy": {
+                "application": {
+                    "id": "4765445b-32c6-49b0-83e6-1d93765276ca",
+                    "displayName": "OfficeHome"
+                },
+                "user": {
+                    "email": "sayan@v-comply.com",
+                    "id": "95d937b1-d49a-4ce9-ab85-e4b704f1a2a6",
+                    "displayName": "SAYAN BOSE"
+                }
+            },
+            "lastModifiedBy": {
+                "user": {
+                    "email": "sayan@v-comply.com",
+                    "id": "95d937b1-d49a-4ce9-ab85-e4b704f1a2a6",
+                    "displayName": "SAYAN BOSE"
+                }
+            },
+            "parentReference": {
+                "driveType": "business",
+                "driveId": "b!8dYvAg_OIkODvSW_1NWrylKrA8EwD0pPiGgeiwfdY4EelHvlhxDQTYNHnXOfixnh",
+                "id": "01VVF7TBV6Y2GOVW7725BZO354PWSELRRZ",
+                "name": "Documents",
+                "path": "/drive/root:",
+                "siteId": "022fd6f1-ce0f-4322-83bd-25bfd4d5abca"
+            },
+            "file": {
+                "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                "hashes": {
+                    "quickXorHash": "xO1zi1u57gQJlB9UmlRnjDpmp+s="
+                }
+            },
+            "fileSystemInfo": {
+                "createdDateTime": "2025-01-27T13:50:29Z",
+                "lastModifiedDateTime": "2025-01-27T13:51:13Z"
+            }
+        },
+        {
+            "@microsoft.graph.downloadUrl": "https://vcomplytechnologies-my.sharepoint.com/personal/sayan_v-comply_com/_layouts/15/download.aspx?UniqueId=44d085de-373f-44f5-9c6c-d63480d1e975&Translate=false&tempauth=v1.eyJzaXRlaWQiOiIwMjJmZDZmMS1jZTBmLTQzMjItODNiZC0yNWJmZDRkNWFiY2EiLCJhcHBfZGlzcGxheW5hbWUiOiJHcmFwaCBFeHBsb3JlciIsImFwcGlkIjoiZGU4YmM4YjUtZDlmOS00OGIxLWE4YWQtYjc0OGRhNzI1MDY0IiwiYXVkIjoiMDAwMDAwMDMtMDAwMC0wZmYxLWNlMDAtMDAwMDAwMDAwMDAwL3Zjb21wbHl0ZWNobm9sb2dpZXMtbXkuc2hhcmVwb2ludC5jb21ANDliZGZkNmEtMWFiYi00YTk2LWFmZWMtY2U5OWZlOGExNWMxIiwiZXhwIjoiMTczODA2MjIyNyJ9.CgoKBHNuaWQSAjY0EgsI8ubN8KLj3z0QBRoNMjAuMTkwLjE3NS4yNCosQ2xzSkNtSHRtY1U4d2xIekFHVkdMYUJORnhqNEdzVmlCN0t1ZWtkaDhXVT0woQE4AUIQoXvorRWgAEB-w_gRXnXX6EoQaGFzaGVkcHJvb2Z0b2tlblIIWyJrbXNpIl1yKTBoLmZ8bWVtYmVyc2hpcHwxMDAzMjAwNDI5ODEwNjA0QGxpdmUuY29tegEyggESCWr9vUm7GpZKEa_szpn-ihXBkgEFU0FZQU6aAQRCT1NFogESc2F5YW5Adi1jb21wbHkuY29tqgEQMTAwMzIwMDQyOTgxMDYwNLIBK215ZmlsZXMucmVhZCBhbGxmaWxlcy5yZWFkIGFsbHByb2ZpbGVzLnJlYWTIAQE.g37-1l3fMUplGprKc-tbE5Ncs6joZ5NDp1WzRK9Sy9k&ApiVersion=2.0",
+            "createdDateTime": "2025-01-10T08:45:47Z",
+            "eTag": "\"{44D085DE-373F-44F5-9C6C-D63480D1E975},21\"",
+            "id": "01VVF7TBW6QXIEIPZX6VCJY3GWGSAND2LV",
+            "lastModifiedDateTime": "2025-01-10T19:19:08Z",
+            "name": "Progress Tracking Tool.xlsx",
+            "webUrl": "https://vcomplytechnologies-my.sharepoint.com/personal/sayan_v-comply_com/_layouts/15/Doc.aspx?sourcedoc=%7B44D085DE-373F-44F5-9C6C-D63480D1E975%7D&file=Progress%20Tracking%20Tool.xlsx&action=default&mobileredirect=true",
+            "cTag": "\"c:{44D085DE-373F-44F5-9C6C-D63480D1E975},13\"",
+            "size": 7233,
+            "createdBy": {
+                "application": {
+                    "id": "4765445b-32c6-49b0-83e6-1d93765276ca",
+                    "displayName": "OfficeHome"
+                },
+                "user": {
+                    "email": "sayan@v-comply.com",
+                    "id": "95d937b1-d49a-4ce9-ab85-e4b704f1a2a6",
+                    "displayName": "SAYAN BOSE"
+                }
+            },
+            "lastModifiedBy": {
+                "user": {
+                    "email": "sayan@v-comply.com",
+                    "id": "95d937b1-d49a-4ce9-ab85-e4b704f1a2a6",
+                    "displayName": "SAYAN BOSE"
+                }
+            },
+            "parentReference": {
+                "driveType": "business",
+                "driveId": "b!8dYvAg_OIkODvSW_1NWrylKrA8EwD0pPiGgeiwfdY4EelHvlhxDQTYNHnXOfixnh",
+                "id": "01VVF7TBV6Y2GOVW7725BZO354PWSELRRZ",
+                "name": "Documents",
+                "path": "/drive/root:",
+                "siteId": "022fd6f1-ce0f-4322-83bd-25bfd4d5abca"
+            },
+            "file": {
+                "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                "hashes": {
+                    "quickXorHash": "/awUJHcEoZIxLRzDicEazCpkneQ="
+                }
+            },
+            "fileSystemInfo": {
+                "createdDateTime": "2025-01-10T08:45:47Z",
+                "lastModifiedDateTime": "2025-01-10T19:19:08Z"
+            },
+            "shared": {
+                "scope": "users"
+            }
+        },
+        {
+            "@microsoft.graph.downloadUrl": "https://vcomplytechnologies-my.sharepoint.com/personal/sayan_v-comply_com/_layouts/15/download.aspx?UniqueId=3d7f31b9-aed5-49ba-99fc-0531adb78fd4&Translate=false&tempauth=v1.eyJzaXRlaWQiOiIwMjJmZDZmMS1jZTBmLTQzMjItODNiZC0yNWJmZDRkNWFiY2EiLCJhcHBfZGlzcGxheW5hbWUiOiJHcmFwaCBFeHBsb3JlciIsImFwcGlkIjoiZGU4YmM4YjUtZDlmOS00OGIxLWE4YWQtYjc0OGRhNzI1MDY0IiwiYXVkIjoiMDAwMDAwMDMtMDAwMC0wZmYxLWNlMDAtMDAwMDAwMDAwMDAwL3Zjb21wbHl0ZWNobm9sb2dpZXMtbXkuc2hhcmVwb2ludC5jb21ANDliZGZkNmEtMWFiYi00YTk2LWFmZWMtY2U5OWZlOGExNWMxIiwiZXhwIjoiMTczODA2MjIyNyJ9.CgoKBHNuaWQSAjY0EgsI8ubN8KLj3z0QBRoNMjAuMTkwLjE3NS4yNCosbVhRczJUSVlGU0xvb2lTRG5HNmVhS1JLbi9RV0xpakN6ck5FeU90U3o0TT0woQE4AUIQoXvorRWgAEB-w_gRXnXX6EoQaGFzaGVkcHJvb2Z0b2tlblIIWyJrbXNpIl1yKTBoLmZ8bWVtYmVyc2hpcHwxMDAzMjAwNDI5ODEwNjA0QGxpdmUuY29tegEyggESCWr9vUm7GpZKEa_szpn-ihXBkgEFU0FZQU6aAQRCT1NFogESc2F5YW5Adi1jb21wbHkuY29tqgEQMTAwMzIwMDQyOTgxMDYwNLIBK215ZmlsZXMucmVhZCBhbGxmaWxlcy5yZWFkIGFsbHByb2ZpbGVzLnJlYWTIAQE.Z0Aox5Gmsz46jjVbsdWpU42S8EkSplsUmCX7QqsAKdo&ApiVersion=2.0",
+            "createdDateTime": "2025-01-03T10:33:56Z",
+            "eTag": "\"{3D7F31B9-AED5-49BA-99FC-0531ADB78FD4},47\"",
+            "id": "01VVF7TBVZGF7T3VNOXJEZT7AFGGW3PD6U",
+            "lastModifiedDateTime": "2025-01-06T12:52:53Z",
+            "name": "WorkPlan.xlsx",
+            "webUrl": "https://vcomplytechnologies-my.sharepoint.com/personal/sayan_v-comply_com/_layouts/15/Doc.aspx?sourcedoc=%7B3D7F31B9-AED5-49BA-99FC-0531ADB78FD4%7D&file=WorkPlan.xlsx&action=default&mobileredirect=true",
+            "cTag": "\"c:{3D7F31B9-AED5-49BA-99FC-0531ADB78FD4},34\"",
+            "size": 7791,
+            "createdBy": {
+                "application": {
+                    "id": "4765445b-32c6-49b0-83e6-1d93765276ca",
+                    "displayName": "OfficeHome"
+                },
+                "user": {
+                    "email": "sayan@v-comply.com",
+                    "id": "95d937b1-d49a-4ce9-ab85-e4b704f1a2a6",
+                    "displayName": "SAYAN BOSE"
+                }
+            },
+            "lastModifiedBy": {
+                "user": {
+                    "email": "sayan@v-comply.com",
+                    "id": "95d937b1-d49a-4ce9-ab85-e4b704f1a2a6",
+                    "displayName": "SAYAN BOSE"
+                }
+            },
+            "parentReference": {
+                "driveType": "business",
+                "driveId": "b!8dYvAg_OIkODvSW_1NWrylKrA8EwD0pPiGgeiwfdY4EelHvlhxDQTYNHnXOfixnh",
+                "id": "01VVF7TBV6Y2GOVW7725BZO354PWSELRRZ",
+                "name": "Documents",
+                "path": "/drive/root:",
+                "siteId": "022fd6f1-ce0f-4322-83bd-25bfd4d5abca"
+            },
+            "file": {
+                "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                "hashes": {
+                    "quickXorHash": "bUv56hyBAUQHDb6kHi+WfUhIOEI="
+                }
+            },
+            "fileSystemInfo": {
+                "createdDateTime": "2025-01-03T10:33:56Z",
+                "lastModifiedDateTime": "2025-01-06T12:52:53Z"
+            },
+            "shared": {
+                "scope": "users"
+            }
+        }
+    ]
+}
+
+
+
+{
+    "value": [
+        {
+            "searchTerms": [],
+            "hitsContainers": [
+                {
+                    "hits": [
+                        {
+                            "hitId": "01VVF7TBTAP6KR2FZLXVAKR3JLS3CIYQVR",
+                            "rank": 1,
+                            "summary": "",
+                            "resource": {
+                                "@odata.type": "#microsoft.graph.driveItem",
+                                "size": 10662,
+                                "fileSystemInfo": {
+                                    "createdDateTime": "2025-01-23T09:32:16Z",
+                                    "lastModifiedDateTime": "2025-01-28T09:12:07Z"
+                                },
+                                "listItem": {
+                                    "@odata.type": "#microsoft.graph.listItem",
+                                    "id": "1d957f60-2b17-40bd-a8ed-2b96c48c42b1",
+                                    "fields": {}
+                                },
+                                "id": "01VVF7TBTAP6KR2FZLXVAKR3JLS3CIYQVR",
+                                "createdBy": {
+                                    "user": {
+                                        "displayName": "SAYAN BOSE",
+                                        "email": "sayan@v-comply.com"
+                                    }
+                                },
+                                "createdDateTime": "2025-01-23T09:32:16Z",
+                                "lastModifiedBy": {
+                                    "user": {
+                                        "displayName": "SAYAN BOSE",
+                                        "email": "sayan@v-comply.com"
+                                    }
+                                },
+                                "lastModifiedDateTime": "2025-01-28T09:12:07Z",
+                                "name": "AddIn-Tester.docx",
+                                "parentReference": {
+                                    "driveId": "b!8dYvAg_OIkODvSW_1NWrylKrA8EwD0pPiGgeiwfdY4EelHvlhxDQTYNHnXOfixnh",
+                                    "id": "01VVF7TBXMUBZWH3E6P5AKUI4DX5ZLHXWZ",
+                                    "sharepointIds": {
+                                        "listId": "e57b941e-1087-4dd0-8347-9d739f8b19e1",
+                                        "listItemId": "19",
+                                        "listItemUniqueId": "1d957f60-2b17-40bd-a8ed-2b96c48c42b1"
+                                    },
+                                    "siteId": "vcomplytechnologies-my.sharepoint.com,022fd6f1-ce0f-4322-83bd-25bfd4d5abca,c103ab52-0f30-4f4a-8868-1e8b07dd6381"
+                                },
+                                "webUrl": "https://vcomplytechnologies-my.sharepoint.com/personal/sayan_v-comply_com/Documents/AddIn-Tester.docx"
+                            }
+                        },
+                        {
+                            "hitId": "01VVF7TBQ6QQDGD5XYRJHJRX5AWS2OH4FJ",
+                            "rank": 2,
+                            "summary": "",
+                            "resource": {
+                                "@odata.type": "#microsoft.graph.driveItem",
+                                "size": 10572,
+                                "fileSystemInfo": {
+                                    "createdDateTime": "2025-01-23T12:40:32Z",
+                                    "lastModifiedDateTime": "2012-08-07T16:44:00Z"
+                                },
+                                "listItem": {
+                                    "@odata.type": "#microsoft.graph.listItem",
+                                    "id": "6106841e-f8f6-4e8a-98df-a0b4b4e3f0a9",
+                                    "fields": {}
+                                },
+                                "id": "01VVF7TBQ6QQDGD5XYRJHJRX5AWS2OH4FJ",
+                                "createdBy": {
+                                    "user": {
+                                        "displayName": "SAYAN BOSE",
+                                        "email": "sayan@v-comply.com"
+                                    }
+                                },
+                                "createdDateTime": "2025-01-23T12:40:32Z",
+                                "lastModifiedBy": {
+                                    "user": {
+                                        "displayName": "SAYAN BOSE",
+                                        "email": "sayan@v-comply.com"
+                                    }
+                                },
+                                "lastModifiedDateTime": "2012-08-07T16:44:00Z",
+                                "name": "Document.docx",
+                                "parentReference": {
+                                    "driveId": "b!8dYvAg_OIkODvSW_1NWrylKrA8EwD0pPiGgeiwfdY4EelHvlhxDQTYNHnXOfixnh",
+                                    "id": "01VVF7TBXMUBZWH3E6P5AKUI4DX5ZLHXWZ",
+                                    "sharepointIds": {
+                                        "listId": "e57b941e-1087-4dd0-8347-9d739f8b19e1",
+                                        "listItemId": "20",
+                                        "listItemUniqueId": "6106841e-f8f6-4e8a-98df-a0b4b4e3f0a9"
+                                    },
+                                    "siteId": "vcomplytechnologies-my.sharepoint.com,022fd6f1-ce0f-4322-83bd-25bfd4d5abca,c103ab52-0f30-4f4a-8868-1e8b07dd6381"
+                                },
+                                "webUrl": "https://vcomplytechnologies-my.sharepoint.com/personal/sayan_v-comply_com/Documents/Document.docx"
+                            }
+                        },
+                        {
+                            "hitId": "01VVF7TBUBAUW6UR4EOFEKHJHD72UM6ZRW",
+                            "rank": 3,
+                            "summary": "Name of the Owner: Sayan Bose \\n Name of the Policy: Code and Ethics<ddd/>",
+                            "resource": {
+                                "@odata.type": "#microsoft.graph.driveItem",
+                                "size": 10553,
+                                "fileSystemInfo": {
+                                    "createdDateTime": "2025-01-27T13:50:29Z",
+                                    "lastModifiedDateTime": "2025-01-27T13:51:13Z"
+                                },
+                                "listItem": {
+                                    "@odata.type": "#microsoft.graph.listItem",
+                                    "id": "ea2d0581-8447-4871-a3a4-e3fea8cf6636",
+                                    "fields": {}
+                                },
+                                "id": "01VVF7TBUBAUW6UR4EOFEKHJHD72UM6ZRW",
+                                "createdBy": {
+                                    "user": {
+                                        "displayName": "SAYAN BOSE",
+                                        "email": "sayan@v-comply.com"
+                                    }
+                                },
+                                "createdDateTime": "2025-01-27T13:50:29Z",
+                                "lastModifiedBy": {
+                                    "user": {
+                                        "displayName": "SAYAN BOSE",
+                                        "email": "sayan@v-comply.com"
+                                    }
+                                },
+                                "lastModifiedDateTime": "2025-01-27T13:51:13Z",
+                                "name": "NewAddIn_tester.docx",
+                                "parentReference": {
+                                    "driveId": "b!8dYvAg_OIkODvSW_1NWrylKrA8EwD0pPiGgeiwfdY4EelHvlhxDQTYNHnXOfixnh",
+                                    "id": "01VVF7TBXMUBZWH3E6P5AKUI4DX5ZLHXWZ",
+                                    "sharepointIds": {
+                                        "listId": "e57b941e-1087-4dd0-8347-9d739f8b19e1",
+                                        "listItemId": "21",
+                                        "listItemUniqueId": "ea2d0581-8447-4871-a3a4-e3fea8cf6636"
+                                    },
+                                    "siteId": "vcomplytechnologies-my.sharepoint.com,022fd6f1-ce0f-4322-83bd-25bfd4d5abca,c103ab52-0f30-4f4a-8868-1e8b07dd6381"
+                                },
+                                "webUrl": "https://vcomplytechnologies-my.sharepoint.com/personal/sayan_v-comply_com/Documents/NewAddIn_tester.docx"
+                            }
+                        },
+                        {
+                            "hitId": "0134ZNTQSXQWQV6Q7K2JHKGKOTJNBXNTNB",
+                            "rank": 4,
+                            "summary": "Docker:  AWS<ddd/>",
+                            "resource": {
+                                "@odata.type": "#microsoft.graph.driveItem",
+                                "size": 595119,
+                                "fileSystemInfo": {
+                                    "createdDateTime": "2025-01-16T13:03:34Z",
+                                    "lastModifiedDateTime": "2025-01-16T18:19:21Z"
+                                },
+                                "listItem": {
+                                    "@odata.type": "#microsoft.graph.listItem",
+                                    "id": "5fa18557-ea43-4ed2-a329-d34b4376cda1",
+                                    "fields": {}
+                                },
+                                "id": "0134ZNTQSXQWQV6Q7K2JHKGKOTJNBXNTNB",
+                                "createdBy": {
+                                    "user": {
+                                        "displayName": "Tanisha Jauhari",
+                                        "email": "tanisha@v-comply.com"
+                                    }
+                                },
+                                "createdDateTime": "2025-01-16T13:03:34Z",
+                                "lastModifiedBy": {
+                                    "user": {
+                                        "displayName": "Tanisha Jauhari",
+                                        "email": "tanisha@v-comply.com"
+                                    }
+                                },
+                                "lastModifiedDateTime": "2025-01-16T18:19:21Z",
+                                "name": "Docker.docx",
+                                "parentReference": {
+                                    "driveId": "b!DReEusRQN0aUmffITytXWblxzzkSsq5KmzkhyzWbHJU4FTdSe-GiSoGPcBFfhf7B",
+                                    "id": "0134ZNTQTVK6U7HKRJHRF2P2JHYFFCO77Z",
+                                    "sharepointIds": {
+                                        "listId": "52371538-e17b-4aa2-818f-70115f85fec1",
+                                        "listItemId": "13810",
+                                        "listItemUniqueId": "5fa18557-ea43-4ed2-a329-d34b4376cda1"
+                                    },
+                                    "siteId": "vcomplytechnologies-my.sharepoint.com,ba84170d-50c4-4637-9499-f7c84f2b5759,39cf71b9-b212-4aae-9b39-21cb359b1c95"
+                                },
+                                "webUrl": "https://vcomplytechnologies-my.sharepoint.com/personal/anmol_v-comply_com/Documents/VComply Training/Batch-2025/Tanisha Jauhari/Day-8 Docker & AWS/Docker.docx"
+                            }
+                        },
+                        {
+                            "hitId": "0134ZNTQRWRPOHPSKYGNDKJVCQVH77JC6Z",
+                            "rank": 5,
+                            "summary": "2 | Page Learning Summary I have used docker to implement the Postgres and Redis assignment and MongoDB compass shell to complete the assignment for MongoDB. Redis script has been<ddd/>",
+                            "resource": {
+                                "@odata.type": "#microsoft.graph.driveItem",
+                                "size": 791003,
+                                "fileSystemInfo": {
+                                    "createdDateTime": "2025-01-14T16:08:31Z",
+                                    "lastModifiedDateTime": "2025-01-15T04:11:04Z"
+                                },
+                                "listItem": {
+                                    "@odata.type": "#microsoft.graph.listItem",
+                                    "id": "77dc8b36-58c9-4633-a4d4-50a9fff48bd9",
+                                    "fields": {}
+                                },
+                                "id": "0134ZNTQRWRPOHPSKYGNDKJVCQVH77JC6Z",
+                                "createdBy": {
+                                    "user": {
+                                        "displayName": "SAYAN BOSE",
+                                        "email": "sayan@v-comply.com"
+                                    }
+                                },
+                                "createdDateTime": "2025-01-14T16:08:31Z",
+                                "lastModifiedBy": {
+                                    "user": {
+                                        "displayName": "SAYAN BOSE",
+                                        "email": "sayan@v-comply.com"
+                                    }
+                                },
+                                "lastModifiedDateTime": "2025-01-15T04:11:04Z",
+                                "name": "Summary.docx",
+                                "parentReference": {
+                                    "driveId": "b!DReEusRQN0aUmffITytXWblxzzkSsq5KmzkhyzWbHJU4FTdSe-GiSoGPcBFfhf7B",
+                                    "id": "0134ZNTQVABV2SJSENNVHK7U2CSG3LITVJ",
+                                    "sharepointIds": {
+                                        "listId": "52371538-e17b-4aa2-818f-70115f85fec1",
+                                        "listItemId": "12547",
+                                        "listItemUniqueId": "77dc8b36-58c9-4633-a4d4-50a9fff48bd9"
+                                    },
+                                    "siteId": "vcomplytechnologies-my.sharepoint.com,ba84170d-50c4-4637-9499-f7c84f2b5759,39cf71b9-b212-4aae-9b39-21cb359b1c95"
+                                },
+                                "webUrl": "https://vcomplytechnologies-my.sharepoint.com/personal/anmol_v-comply_com/Documents/VComply Training/Batch-2025/Sayan Bose/Day 6 - Database/Summary.docx"
+                            }
+                        },
+                        {
+                            "hitId": "0134ZNTQSA5PZZQVS3TVB3TXP3UAW55PS2",
+                            "rank": 6,
+                            "summary": "REACT REAL TIME DASHBOARD GitHub Project Link: https://github.com/sayanbose-100/ReactDashbaord.git Deployed URL: Link To Project<ddd/>",
+                            "resource": {
+                                "@odata.type": "#microsoft.graph.driveItem",
+                                "size": 11175,
+                                "fileSystemInfo": {
+                                    "createdDateTime": "2025-01-09T13:34:13Z",
+                                    "lastModifiedDateTime": "2025-01-09T13:54:13Z"
+                                },
+                                "listItem": {
+                                    "@odata.type": "#microsoft.graph.listItem",
+                                    "id": "98f3eb40-5b56-439d-b9dd-fba02ddebe5a",
+                                    "fields": {}
+                                },
+                                "id": "0134ZNTQSA5PZZQVS3TVB3TXP3UAW55PS2",
+                                "createdBy": {
+                                    "user": {
+                                        "displayName": "SAYAN BOSE",
+                                        "email": "sayan@v-comply.com"
+                                    }
+                                },
+                                "createdDateTime": "2025-01-09T13:34:13Z",
+                                "lastModifiedBy": {
+                                    "user": {
+                                        "displayName": "SAYAN BOSE",
+                                        "email": "sayan@v-comply.com"
+                                    }
+                                },
+                                "lastModifiedDateTime": "2025-01-09T13:54:13Z",
+                                "name": "React Dashboard.docx",
+                                "parentReference": {
+                                    "driveId": "b!DReEusRQN0aUmffITytXWblxzzkSsq5KmzkhyzWbHJU4FTdSe-GiSoGPcBFfhf7B",
+                                    "id": "0134ZNTQQ6LO7X54YIANEYFZLVMTTSY3MQ",
+                                    "sharepointIds": {
+                                        "listId": "52371538-e17b-4aa2-818f-70115f85fec1",
+                                        "listItemId": "9429",
+                                        "listItemUniqueId": "98f3eb40-5b56-439d-b9dd-fba02ddebe5a"
+                                    },
+                                    "siteId": "vcomplytechnologies-my.sharepoint.com,ba84170d-50c4-4637-9499-f7c84f2b5759,39cf71b9-b212-4aae-9b39-21cb359b1c95"
+                                },
+                                "webUrl": "https://vcomplytechnologies-my.sharepoint.com/personal/anmol_v-comply_com/Documents/VComply Training/Batch-2025/Sayan Bose/Day 4 - Angular and React/React Dashboard.docx"
+                            }
+                        },
+                        {
+                            "hitId": "0134ZNTQSQT6LSTZLOKZD3AYLNOHJAWRT2",
+                            "rank": 7,
+                            "summary": "Deliverables: a. A hosted project link. Frontend: https://task-lens-assistant.vercel.app  Backend: https://tasklens.onrender.com  b. Fully functional code with comments explaining<ddd/>",
+                            "resource": {
+                                "@odata.type": "#microsoft.graph.driveItem",
+                                "size": 11417,
+                                "fileSystemInfo": {
+                                    "createdDateTime": "2025-01-12T13:25:49Z",
+                                    "lastModifiedDateTime": "2025-01-12T14:31:20Z"
+                                },
+                                "listItem": {
+                                    "@odata.type": "#microsoft.graph.listItem",
+                                    "id": "29979f50-6ee5-4756-b061-6d71d20b467a",
+                                    "fields": {}
+                                },
+                                "id": "0134ZNTQSQT6LSTZLOKZD3AYLNOHJAWRT2",
+                                "createdBy": {
+                                    "user": {
+                                        "displayName": "Tanisha Jauhari",
+                                        "email": "tanisha@v-comply.com"
+                                    }
+                                },
+                                "createdDateTime": "2025-01-12T13:25:49Z",
+                                "lastModifiedBy": {
+                                    "user": {
+                                        "displayName": "Tanisha Jauhari",
+                                        "email": "tanisha@v-comply.com"
+                                    }
+                                },
+                                "lastModifiedDateTime": "2025-01-12T14:31:20Z",
+                                "name": "TaskLens-Deliverables.docx",
+                                "parentReference": {
+                                    "driveId": "b!DReEusRQN0aUmffITytXWblxzzkSsq5KmzkhyzWbHJU4FTdSe-GiSoGPcBFfhf7B",
+                                    "id": "0134ZNTQSMZGCRMY2GBNA2QGZPVU6TSCUP",
+                                    "sharepointIds": {
+                                        "listId": "52371538-e17b-4aa2-818f-70115f85fec1",
+                                        "listItemId": "9445",
+                                        "listItemUniqueId": "29979f50-6ee5-4756-b061-6d71d20b467a"
+                                    },
+                                    "siteId": "vcomplytechnologies-my.sharepoint.com,ba84170d-50c4-4637-9499-f7c84f2b5759,39cf71b9-b212-4aae-9b39-21cb359b1c95"
+                                },
+                                "webUrl": "https://vcomplytechnologies-my.sharepoint.com/personal/anmol_v-comply_com/Documents/VComply Training/Batch-2025/Tanisha Jauhari/Day-5 TaskLens AI-driven task assistance/TaskLens-Deliverables.docx"
+                            }
+                        },
+                        {
+                            "hitId": "0134ZNTQRAJPBW3GOXCVAJ4PX3PZWNVIAE",
+                            "rank": 8,
+                            "summary": "Learning Summary JavaScript variables var - var is a keyword used to declare variables. It was one of the first ways to declare variables in JavaScript, but with the introduction<ddd/>",
+                            "resource": {
+                                "@odata.type": "#microsoft.graph.driveItem",
+                                "size": 19502,
+                                "fileSystemInfo": {
+                                    "createdDateTime": "2025-01-08T11:27:11Z",
+                                    "lastModifiedDateTime": "2025-01-08T12:07:56Z"
+                                },
+                                "listItem": {
+                                    "@odata.type": "#microsoft.graph.listItem",
+                                    "id": "6dc34b20-d799-4015-9e3e-fb7e6cdaa004",
+                                    "fields": {}
+                                },
+                                "id": "0134ZNTQRAJPBW3GOXCVAJ4PX3PZWNVIAE",
+                                "createdBy": {
+                                    "user": {
+                                        "displayName": "SAYAN BOSE",
+                                        "email": "sayan@v-comply.com"
+                                    }
+                                },
+                                "createdDateTime": "2025-01-08T11:27:11Z",
+                                "lastModifiedBy": {
+                                    "user": {
+                                        "displayName": "SAYAN BOSE",
+                                        "email": "sayan@v-comply.com"
+                                    }
+                                },
+                                "lastModifiedDateTime": "2025-01-08T12:07:56Z",
+                                "name": "Learning Summary.docx",
+                                "parentReference": {
+                                    "driveId": "b!DReEusRQN0aUmffITytXWblxzzkSsq5KmzkhyzWbHJU4FTdSe-GiSoGPcBFfhf7B",
+                                    "id": "0134ZNTQWJT4FZJYD555FIFIWGVS2QMCR2",
+                                    "sharepointIds": {
+                                        "listId": "52371538-e17b-4aa2-818f-70115f85fec1",
+                                        "listItemId": "9375",
+                                        "listItemUniqueId": "6dc34b20-d799-4015-9e3e-fb7e6cdaa004"
+                                    },
+                                    "siteId": "vcomplytechnologies-my.sharepoint.com,ba84170d-50c4-4637-9499-f7c84f2b5759,39cf71b9-b212-4aae-9b39-21cb359b1c95"
+                                },
+                                "webUrl": "https://vcomplytechnologies-my.sharepoint.com/personal/anmol_v-comply_com/Documents/VComply Training/Batch-2025/Sayan Bose/Day 3 - Javascript, TypeScript and ES6/Learning Summary.docx"
+                            }
+                        },
+                        {
+                            "hitId": "0134ZNTQVBM4KX6YZIXFAITIB7NKIISBVU",
+                            "rank": 9,
+                            "summary": "Page 2 of 2 UNIX and GitHub UNIX Practice Setup  Create a folder named: UNIX-practice  Tasks  Navigate into the unix-practice folder.   Navigation to the “unix-practice” folder is<ddd/>",
+                            "resource": {
+                                "@odata.type": "#microsoft.graph.driveItem",
+                                "size": 731074,
+                                "fileSystemInfo": {
+                                    "createdDateTime": "2025-01-06T13:23:27Z",
+                                    "lastModifiedDateTime": "2025-01-06T18:14:39Z"
+                                },
+                                "listItem": {
+                                    "@odata.type": "#microsoft.graph.listItem",
+                                    "id": "7f1567a1-2863-40b9-89a0-3f6a908906b4",
+                                    "fields": {}
+                                },
+                                "id": "0134ZNTQVBM4KX6YZIXFAITIB7NKIISBVU",
+                                "createdBy": {
+                                    "user": {
+                                        "displayName": "SAYAN BOSE",
+                                        "email": "sayan@v-comply.com"
+                                    }
+                                },
+                                "createdDateTime": "2025-01-06T13:23:27Z",
+                                "lastModifiedBy": {
+                                    "user": {
+                                        "displayName": "SAYAN BOSE",
+                                        "email": "sayan@v-comply.com"
+                                    }
+                                },
+                                "lastModifiedDateTime": "2025-01-06T18:14:39Z",
+                                "name": "Day1-UNIX, GitHub.docx",
+                                "parentReference": {
+                                    "driveId": "b!DReEusRQN0aUmffITytXWblxzzkSsq5KmzkhyzWbHJU4FTdSe-GiSoGPcBFfhf7B",
+                                    "id": "0134ZNTQSB2Z2JMQCKWZCLHTDICMHNFHSZ",
+                                    "sharepointIds": {
+                                        "listId": "52371538-e17b-4aa2-818f-70115f85fec1",
+                                        "listItemId": "9095",
+                                        "listItemUniqueId": "7f1567a1-2863-40b9-89a0-3f6a908906b4"
+                                    },
+                                    "siteId": "vcomplytechnologies-my.sharepoint.com,ba84170d-50c4-4637-9499-f7c84f2b5759,39cf71b9-b212-4aae-9b39-21cb359b1c95"
+                                },
+                                "webUrl": "https://vcomplytechnologies-my.sharepoint.com/personal/anmol_v-comply_com/Documents/VComply Training/Batch-2025/Sayan Bose/Day 1 - UNIX, Github and AI Tools/Day1-UNIX, GitHub.docx"
+                            }
+                        },
+                        {
+                            "hitId": "0134ZNTQV3PZJ2FT24UBBI6POA2SVJHCXS",
+                            "rank": 10,
+                            "summary": "UNIX Commands Summary These are essential UNIX commands commonly used in daily tasks for navigating, manipulating files, and managing processes: ls: Lists directory contents. -a: ",
+                            "resource": {
+                                "@odata.type": "#microsoft.graph.driveItem",
+                                "size": 14260,
+                                "fileSystemInfo": {
+                                    "createdDateTime": "2025-01-06T17:31:52Z",
+                                    "lastModifiedDateTime": "2025-01-06T18:09:23Z"
+                                },
+                                "listItem": {
+                                    "@odata.type": "#microsoft.graph.listItem",
+                                    "id": "a2537ebb-5ccf-42a0-8f3d-c0d4aa938af2",
+                                    "fields": {}
+                                },
+                                "id": "0134ZNTQV3PZJ2FT24UBBI6POA2SVJHCXS",
+                                "createdBy": {
+                                    "user": {
+                                        "displayName": "SAYAN BOSE",
+                                        "email": "sayan@v-comply.com"
+                                    }
+                                },
+                                "createdDateTime": "2025-01-06T17:31:52Z",
+                                "lastModifiedBy": {
+                                    "user": {
+                                        "displayName": "SAYAN BOSE",
+                                        "email": "sayan@v-comply.com"
+                                    }
+                                },
+                                "lastModifiedDateTime": "2025-01-06T18:09:23Z",
+                                "name": "Summary.docx",
+                                "parentReference": {
+                                    "driveId": "b!DReEusRQN0aUmffITytXWblxzzkSsq5KmzkhyzWbHJU4FTdSe-GiSoGPcBFfhf7B",
+                                    "id": "0134ZNTQSB2Z2JMQCKWZCLHTDICMHNFHSZ",
+                                    "sharepointIds": {
+                                        "listId": "52371538-e17b-4aa2-818f-70115f85fec1",
+                                        "listItemId": "9101",
+                                        "listItemUniqueId": "a2537ebb-5ccf-42a0-8f3d-c0d4aa938af2"
+                                    },
+                                    "siteId": "vcomplytechnologies-my.sharepoint.com,ba84170d-50c4-4637-9499-f7c84f2b5759,39cf71b9-b212-4aae-9b39-21cb359b1c95"
+                                },
+                                "webUrl": "https://vcomplytechnologies-my.sharepoint.com/personal/anmol_v-comply_com/Documents/VComply Training/Batch-2025/Sayan Bose/Day 1 - UNIX, Github and AI Tools/Summary.docx"
+                            }
+                        },
+                        {
+                            "hitId": "0134ZNTQSS7HHBNC6C3ZB22FPYIM5P6WVI",
+                            "rank": 11,
+                            "summary": "Project link:project link JavaScript and TypeScript Learning Summary Section 1: JavaScript Core Concepts 1. Event Loop and Async Programming Key Concepts: JavaScript is single-",
+                            "resource": {
+                                "@odata.type": "#microsoft.graph.driveItem",
+                                "size": 16879,
+                                "fileSystemInfo": {
+                                    "createdDateTime": "2025-01-08T11:09:00Z",
+                                    "lastModifiedDateTime": "2025-01-08T11:07:28Z"
+                                },
+                                "listItem": {
+                                    "@odata.type": "#microsoft.graph.listItem",
+                                    "id": "16cef952-c28b-43de-ad15-f8433aff5aa8",
+                                    "fields": {}
+                                },
+                                "id": "0134ZNTQSS7HHBNC6C3ZB22FPYIM5P6WVI",
+                                "createdBy": {
+                                    "user": {
+                                        "displayName": "RASHMI PURKAYASTHA",
+                                        "email": "rashmi.p@v-comply.com"
+                                    }
+                                },
+                                "createdDateTime": "2025-01-08T11:09:00Z",
+                                "lastModifiedBy": {
+                                    "user": {
+                                        "displayName": "RASHMI PURKAYASTHA",
+                                        "email": "rashmi.p@v-comply.com"
+                                    }
+                                },
+                                "lastModifiedDateTime": "2025-01-08T11:07:28Z",
+                                "name": "Project link and summary.docx",
+                                "parentReference": {
+                                    "driveId": "b!DReEusRQN0aUmffITytXWblxzzkSsq5KmzkhyzWbHJU4FTdSe-GiSoGPcBFfhf7B",
+                                    "id": "0134ZNTQTZVMZ2UOQOBJBJ4A6YHL2MF5FZ",
+                                    "sharepointIds": {
+                                        "listId": "52371538-e17b-4aa2-818f-70115f85fec1",
+                                        "listItemId": "9371",
+                                        "listItemUniqueId": "16cef952-c28b-43de-ad15-f8433aff5aa8"
+                                    },
+                                    "siteId": "vcomplytechnologies-my.sharepoint.com,ba84170d-50c4-4637-9499-f7c84f2b5759,39cf71b9-b212-4aae-9b39-21cb359b1c95"
+                                },
+                                "webUrl": "https://vcomplytechnologies-my.sharepoint.com/personal/anmol_v-comply_com/Documents/VComply Training/Batch-2025/Rashmi Purkayastha/DAY 3/Project link and summary.docx"
+                            }
+                        },
+                        {
+                            "hitId": "0134ZNTQS62OEBUZHCH5GYZEMKIFUB7H2E",
+                            "rank": 12,
+                            "summary": "Summary Day - 1 R K Jyothish Unix and Git Commands Part 1 : Unix Commands Practice: Initially started with basic file navigation and file creation commands like : Cd => to traverse<ddd/>",
+                            "resource": {
+                                "@odata.type": "#microsoft.graph.driveItem",
+                                "size": 16240,
+                                "fileSystemInfo": {
+                                    "createdDateTime": "2025-01-06T11:17:29Z",
+                                    "lastModifiedDateTime": "2025-01-06T11:17:00Z"
+                                },
+                                "listItem": {
+                                    "@odata.type": "#microsoft.graph.listItem",
+                                    "id": "1a88d35e-e264-4d3f-8c91-8a41681f9f44",
+                                    "fields": {}
+                                },
+                                "id": "0134ZNTQS62OEBUZHCH5GYZEMKIFUB7H2E",
+                                "createdBy": {
+                                    "user": {
+                                        "displayName": "R K  Jyothish",
+                                        "email": "jyothish@v-comply.com"
+                                    }
+                                },
+                                "createdDateTime": "2025-01-06T11:17:29Z",
+                                "lastModifiedBy": {
+                                    "user": {
+                                        "displayName": "R K  Jyothish",
+                                        "email": "jyothish@v-comply.com"
+                                    }
+                                },
+                                "lastModifiedDateTime": "2025-01-06T11:17:00Z",
+                                "name": "Summary_Day1.docx",
+                                "parentReference": {
+                                    "driveId": "b!DReEusRQN0aUmffITytXWblxzzkSsq5KmzkhyzWbHJU4FTdSe-GiSoGPcBFfhf7B",
+                                    "id": "0134ZNTQTW2TFP7AFUTNGIVOWUAFEIEZEC",
+                                    "sharepointIds": {
+                                        "listId": "52371538-e17b-4aa2-818f-70115f85fec1",
+                                        "listItemId": "8787",
+                                        "listItemUniqueId": "1a88d35e-e264-4d3f-8c91-8a41681f9f44"
+                                    },
+                                    "siteId": "vcomplytechnologies-my.sharepoint.com,ba84170d-50c4-4637-9499-f7c84f2b5759,39cf71b9-b212-4aae-9b39-21cb359b1c95"
+                                },
+                                "webUrl": "https://vcomplytechnologies-my.sharepoint.com/personal/anmol_v-comply_com/Documents/VComply Training/Batch-2025/R K Jyothish/Day1 - Unix and Git Commands/Summary_Day1.docx"
+                            }
+                        },
+                        {
+                            "hitId": "0134ZNTQVBIKWMU2KCBNHJDQ3SBGNFLYNL",
+                            "rank": 13,
+                            "summary": "",
+                            "resource": {
+                                "@odata.type": "#microsoft.graph.driveItem",
+                                "size": 5799719,
+                                "fileSystemInfo": {
+                                    "createdDateTime": "2025-01-07T14:37:30Z",
+                                    "lastModifiedDateTime": "2025-01-07T14:36:00Z"
+                                },
+                                "listItem": {
+                                    "@odata.type": "#microsoft.graph.listItem",
+                                    "id": "caac42a1-4269-4e0b-91c3-72099a55e1ab",
+                                    "fields": {}
+                                },
+                                "id": "0134ZNTQVBIKWMU2KCBNHJDQ3SBGNFLYNL",
+                                "createdBy": {
+                                    "user": {
+                                        "displayName": "SAYAN BOSE",
+                                        "email": "sayan@v-comply.com"
+                                    }
+                                },
+                                "createdDateTime": "2025-01-07T14:37:30Z",
+                                "lastModifiedBy": {
+                                    "user": {
+                                        "displayName": "SAYAN BOSE",
+                                        "email": "sayan@v-comply.com"
+                                    }
+                                },
+                                "lastModifiedDateTime": "2025-01-07T14:36:00Z",
+                                "name": "Screenshots.docx",
+                                "parentReference": {
+                                    "driveId": "b!DReEusRQN0aUmffITytXWblxzzkSsq5KmzkhyzWbHJU4FTdSe-GiSoGPcBFfhf7B",
+                                    "id": "0134ZNTQVNGGSKUM4K3VBJSMNXSECG5NUE",
+                                    "sharepointIds": {
+                                        "listId": "52371538-e17b-4aa2-818f-70115f85fec1",
+                                        "listItemId": "9319",
+                                        "listItemUniqueId": "caac42a1-4269-4e0b-91c3-72099a55e1ab"
+                                    },
+                                    "siteId": "vcomplytechnologies-my.sharepoint.com,ba84170d-50c4-4637-9499-f7c84f2b5759,39cf71b9-b212-4aae-9b39-21cb359b1c95"
+                                },
+                                "webUrl": "https://vcomplytechnologies-my.sharepoint.com/personal/anmol_v-comply_com/Documents/VComply Training/Batch-2025/Sayan Bose/Day 2 - HTML and CSS/Screenshots.docx"
+                            }
+                        },
+                        {
+                            "hitId": "0134ZNTQWLFIVVPTOVIBGYZSG7B6R3YMAM",
+                            "rank": 14,
+                            "summary": "Day 1: Comprehensive Learning Summary Key Topics Discussed: Overview of UNIX Operating System and Key Commands Fundamentals of Git and GitHub UNIX Fundamentals The session<ddd/>",
+                            "resource": {
+                                "@odata.type": "#microsoft.graph.driveItem",
+                                "size": 14872,
+                                "fileSystemInfo": {
+                                    "createdDateTime": "2025-01-06T12:44:20Z",
+                                    "lastModifiedDateTime": "2025-01-06T12:45:26Z"
+                                },
+                                "listItem": {
+                                    "@odata.type": "#microsoft.graph.listItem",
+                                    "id": "572b2acb-d5cd-4d40-8cc8-df0fa3bc300c",
+                                    "fields": {}
+                                },
+                                "id": "0134ZNTQWLFIVVPTOVIBGYZSG7B6R3YMAM",
+                                "createdBy": {
+                                    "user": {
+                                        "displayName": "S Gaurisankar",
+                                        "email": "gaurisankar@v-comply.com"
+                                    }
+                                },
+                                "createdDateTime": "2025-01-06T12:44:20Z",
+                                "lastModifiedBy": {
+                                    "user": {
+                                        "displayName": "S Gaurisankar",
+                                        "email": "gaurisankar@v-comply.com"
+                                    }
+                                },
+                                "lastModifiedDateTime": "2025-01-06T12:45:26Z",
+                                "name": "Day 1 - Learning Summary.docx",
+                                "parentReference": {
+                                    "driveId": "b!DReEusRQN0aUmffITytXWblxzzkSsq5KmzkhyzWbHJU4FTdSe-GiSoGPcBFfhf7B",
+                                    "id": "0134ZNTQVRQUM4QFYAARCKB5JWTGW6G7D2",
+                                    "sharepointIds": {
+                                        "listId": "52371538-e17b-4aa2-818f-70115f85fec1",
+                                        "listItemId": "9072",
+                                        "listItemUniqueId": "572b2acb-d5cd-4d40-8cc8-df0fa3bc300c"
+                                    },
+                                    "siteId": "vcomplytechnologies-my.sharepoint.com,ba84170d-50c4-4637-9499-f7c84f2b5759,39cf71b9-b212-4aae-9b39-21cb359b1c95"
+                                },
+                                "webUrl": "https://vcomplytechnologies-my.sharepoint.com/personal/anmol_v-comply_com/Documents/VComply Training/Batch-2025/S Gaurisankar/Day 1 - Unix, Git, GitHub, AI/Day 1 - Learning Summary.docx"
+                            }
+                        },
+                        {
+                            "hitId": "0134ZNTQVRTSCFOC32YFGY6UWFOSV5HHKF",
+                            "rank": 15,
+                            "summary": "Session-1  2  Session-1  Session-1  2 2  Assignment-1 Part-1: Unix Practice Commands By Tanisha Jauhari 06-Jan-2025 Navigate into the unix-practice folder. Performing the following<ddd/>",
+                            "resource": {
+                                "@odata.type": "#microsoft.graph.driveItem",
+                                "size": 931967,
+                                "fileSystemInfo": {
+                                    "createdDateTime": "2025-01-06T10:30:07Z",
+                                    "lastModifiedDateTime": "2025-01-06T10:28:00Z"
+                                },
+                                "listItem": {
+                                    "@odata.type": "#microsoft.graph.listItem",
+                                    "id": "57849cb1-7a0b-4dc1-8f52-c574abd39d45",
+                                    "fields": {}
+                                },
+                                "id": "0134ZNTQVRTSCFOC32YFGY6UWFOSV5HHKF",
+                                "createdBy": {
+                                    "user": {
+                                        "displayName": "Tanisha Jauhari",
+                                        "email": "tanisha@v-comply.com"
+                                    }
+                                },
+                                "createdDateTime": "2025-01-06T10:30:07Z",
+                                "lastModifiedBy": {
+                                    "user": {
+                                        "displayName": "Tanisha Jauhari",
+                                        "email": "tanisha@v-comply.com"
+                                    }
+                                },
+                                "lastModifiedDateTime": "2025-01-06T10:28:00Z",
+                                "name": "2. Unix Practice Commands.docx",
+                                "parentReference": {
+                                    "driveId": "b!DReEusRQN0aUmffITytXWblxzzkSsq5KmzkhyzWbHJU4FTdSe-GiSoGPcBFfhf7B",
+                                    "id": "0134ZNTQRIHFRMWX3JMNGZXVKVHXKX6JQ6",
+                                    "sharepointIds": {
+                                        "listId": "52371538-e17b-4aa2-818f-70115f85fec1",
+                                        "listItemId": "8775",
+                                        "listItemUniqueId": "57849cb1-7a0b-4dc1-8f52-c574abd39d45"
+                                    },
+                                    "siteId": "vcomplytechnologies-my.sharepoint.com,ba84170d-50c4-4637-9499-f7c84f2b5759,39cf71b9-b212-4aae-9b39-21cb359b1c95"
+                                },
+                                "webUrl": "https://vcomplytechnologies-my.sharepoint.com/personal/anmol_v-comply_com/Documents/VComply Training/Batch-2025/Tanisha Jauhari/DAY-1 Unix, Git, Github and AI Tools/2. Unix Practice Commands.docx"
+                            }
+                        },
+                        {
+                            "hitId": "0134ZNTQVDZA7CVWPPZRB2M52AQPFAJEWJ",
+                            "rank": 16,
+                            "summary": "Session-1 2  Session-1 Session-1 2 2  Assignment-1 Part-2: Git Basics Practice By Tanisha Jauhari 06-Jan-2025 Configure Git with your name and email. Create a file readme.md with<ddd/>",
+                            "resource": {
+                                "@odata.type": "#microsoft.graph.driveItem",
+                                "size": 512403,
+                                "fileSystemInfo": {
+                                    "createdDateTime": "2025-01-06T10:33:37Z",
+                                    "lastModifiedDateTime": "2025-01-06T13:26:09Z"
+                                },
+                                "listItem": {
+                                    "@odata.type": "#microsoft.graph.listItem",
+                                    "id": "2a3ec8a3-efd9-43cc-a677-4083ca0492c9",
+                                    "fields": {}
+                                },
+                                "id": "0134ZNTQVDZA7CVWPPZRB2M52AQPFAJEWJ",
+                                "createdBy": {
+                                    "user": {
+                                        "displayName": "Tanisha Jauhari",
+                                        "email": "tanisha@v-comply.com"
+                                    }
+                                },
+                                "createdDateTime": "2025-01-06T10:33:37Z",
+                                "lastModifiedBy": {
+                                    "user": {
+                                        "displayName": "Tanisha Jauhari",
+                                        "email": "tanisha@v-comply.com"
+                                    }
+                                },
+                                "lastModifiedDateTime": "2025-01-06T13:26:09Z",
+                                "name": "3. Git Basics Practice.docx",
+                                "parentReference": {
+                                    "driveId": "b!DReEusRQN0aUmffITytXWblxzzkSsq5KmzkhyzWbHJU4FTdSe-GiSoGPcBFfhf7B",
+                                    "id": "0134ZNTQRIHFRMWX3JMNGZXVKVHXKX6JQ6",
+                                    "sharepointIds": {
+                                        "listId": "52371538-e17b-4aa2-818f-70115f85fec1",
+                                        "listItemId": "8776",
+                                        "listItemUniqueId": "2a3ec8a3-efd9-43cc-a677-4083ca0492c9"
+                                    },
+                                    "siteId": "vcomplytechnologies-my.sharepoint.com,ba84170d-50c4-4637-9499-f7c84f2b5759,39cf71b9-b212-4aae-9b39-21cb359b1c95"
+                                },
+                                "webUrl": "https://vcomplytechnologies-my.sharepoint.com/personal/anmol_v-comply_com/Documents/VComply Training/Batch-2025/Tanisha Jauhari/DAY-1 Unix, Git, Github and AI Tools/3. Git Basics Practice.docx"
+                            }
+                        },
+                        {
+                            "hitId": "0134ZNTQTEX7MOHMSVRNGYD4NJ5JX7YI2L",
+                            "rank": 17,
+                            "summary": "SCREENSHOTS OF THE DOCKER APP<ddd/>",
+                            "resource": {
+                                "@odata.type": "#microsoft.graph.driveItem",
+                                "size": 375677,
+                                "fileSystemInfo": {
+                                    "createdDateTime": "2025-01-17T04:20:59Z",
+                                    "lastModifiedDateTime": "2025-01-17T04:20:00Z"
+                                },
+                                "listItem": {
+                                    "@odata.type": "#microsoft.graph.listItem",
+                                    "id": "e3d8bf64-55b2-4d8b-81f1-a9ea6ffc234b",
+                                    "fields": {}
+                                },
+                                "id": "0134ZNTQTEX7MOHMSVRNGYD4NJ5JX7YI2L",
+                                "createdBy": {
+                                    "user": {
+                                        "displayName": "SAYAN BOSE",
+                                        "email": "sayan@v-comply.com"
+                                    }
+                                },
+                                "createdDateTime": "2025-01-17T04:20:59Z",
+                                "lastModifiedBy": {
+                                    "user": {
+                                        "displayName": "SAYAN BOSE",
+                                        "email": "sayan@v-comply.com"
+                                    }
+                                },
+                                "lastModifiedDateTime": "2025-01-17T04:20:00Z",
+                                "name": "Screenshots.docx",
+                                "parentReference": {
+                                    "driveId": "b!DReEusRQN0aUmffITytXWblxzzkSsq5KmzkhyzWbHJU4FTdSe-GiSoGPcBFfhf7B",
+                                    "id": "0134ZNTQWIOE652AY3NFDJ3IFDV4CTCRBX",
+                                    "sharepointIds": {
+                                        "listId": "52371538-e17b-4aa2-818f-70115f85fec1",
+                                        "listItemId": "13823",
+                                        "listItemUniqueId": "e3d8bf64-55b2-4d8b-81f1-a9ea6ffc234b"
+                                    },
+                                    "siteId": "vcomplytechnologies-my.sharepoint.com,ba84170d-50c4-4637-9499-f7c84f2b5759,39cf71b9-b212-4aae-9b39-21cb359b1c95"
+                                },
+                                "webUrl": "https://vcomplytechnologies-my.sharepoint.com/personal/anmol_v-comply_com/Documents/VComply Training/Batch-2025/Sayan Bose/Day 8 - Docker and AWS/Screenshots.docx"
+                            }
+                        },
+                        {
+                            "hitId": "01YFFEY435KIBJLDK3CNGLNYMWWZCDTNRA",
+                            "rank": 18,
+                            "summary": "Headline: Enable Policy Engagement with Interactive Training and Attestation Sub: Create, host, and deliver personalized, multilingual training videos directly linked to policies—",
+                            "resource": {
+                                "@odata.type": "#microsoft.graph.driveItem",
+                                "size": 25543,
+                                "fileSystemInfo": {
+                                    "createdDateTime": "2025-01-28T09:28:48Z",
+                                    "lastModifiedDateTime": "2025-01-28T10:17:50Z"
+                                },
+                                "listItem": {
+                                    "@odata.type": "#microsoft.graph.listItem",
+                                    "id": "9502527d-5b8d-4c13-b6e1-96b64439b620",
+                                    "fields": {}
+                                },
+                                "id": "01YFFEY435KIBJLDK3CNGLNYMWWZCDTNRA",
+                                "createdBy": {
+                                    "user": {
+                                        "displayName": "Ayushi Gupta",
+                                        "email": "ayushi@v-comply.com"
+                                    }
+                                },
+                                "createdDateTime": "2025-01-28T09:28:48Z",
+                                "lastModifiedBy": {
+                                    "user": {
+                                        "displayName": "Ayushi Gupta",
+                                        "email": "ayushi@v-comply.com"
+                                    }
+                                },
+                                "lastModifiedDateTime": "2025-01-28T10:17:50Z",
+                                "name": "Landing Page.docx",
+                                "parentReference": {
+                                    "driveId": "b!zGbIvbCrnUqdc_FPDtW2gt9NeTcPYCRBvhSG46RDUoFOGq2zBztFS7W2t3hewIOp",
+                                    "id": "01YFFEY44WTQC3P4MLXRFYHO3QP64AOO6N",
+                                    "sharepointIds": {
+                                        "listId": "b3ad1a4e-3b07-4b45-b5b6-b7785ec083a9",
+                                        "listItemId": "345",
+                                        "listItemUniqueId": "9502527d-5b8d-4c13-b6e1-96b64439b620"
+                                    },
+                                    "siteId": "vcomplytechnologies.sharepoint.com,bdc866cc-abb0-4a9d-9d73-f14f0ed5b682,37794ddf-600f-4124-be14-86e3a4435281"
+                                },
+                                "webUrl": "https://vcomplytechnologies.sharepoint.com/sites/VComplyTechnologiesInc/Shared Documents/Product Marketing/Gan.AI Integration with PolicyOps/Landing Page.docx"
+                            }
+                        },
+                        {
+                            "hitId": "0134ZNTQWZVEA4DCMC4JA3JWP35T3YOQDW",
+                            "rank": 19,
+                            "summary": "NodeJS and CRON Jobs Console messages to indicate that Log entry or log delete or report generation occurred. Screenshots of the log.txt Report generation screenshots Screenshots<ddd/>",
+                            "resource": {
+                                "@odata.type": "#microsoft.graph.driveItem",
+                                "size": 175796,
+                                "fileSystemInfo": {
+                                    "createdDateTime": "2025-01-15T09:45:19Z",
+                                    "lastModifiedDateTime": "2025-01-15T09:45:00Z"
+                                },
+                                "listItem": {
+                                    "@odata.type": "#microsoft.graph.listItem",
+                                    "id": "c101a9d9-8289-41e2-b4d9-fbecf7874076",
+                                    "fields": {}
+                                },
+                                "id": "0134ZNTQWZVEA4DCMC4JA3JWP35T3YOQDW",
+                                "createdBy": {
+                                    "user": {
+                                        "displayName": "SAYAN BOSE",
+                                        "email": "sayan@v-comply.com"
+                                    }
+                                },
+                                "createdDateTime": "2025-01-15T09:45:19Z",
+                                "lastModifiedBy": {
+                                    "user": {
+                                        "displayName": "SAYAN BOSE",
+                                        "email": "sayan@v-comply.com"
+                                    }
+                                },
+                                "lastModifiedDateTime": "2025-01-15T09:45:00Z",
+                                "name": "Summary.docx",
+                                "parentReference": {
+                                    "driveId": "b!DReEusRQN0aUmffITytXWblxzzkSsq5KmzkhyzWbHJU4FTdSe-GiSoGPcBFfhf7B",
+                                    "id": "0134ZNTQUU3UZQUEMZCVDYJX53HJMGEE2W",
+                                    "sharepointIds": {
+                                        "listId": "52371538-e17b-4aa2-818f-70115f85fec1",
+                                        "listItemId": "12561",
+                                        "listItemUniqueId": "c101a9d9-8289-41e2-b4d9-fbecf7874076"
+                                    },
+                                    "siteId": "vcomplytechnologies-my.sharepoint.com,ba84170d-50c4-4637-9499-f7c84f2b5759,39cf71b9-b212-4aae-9b39-21cb359b1c95"
+                                },
+                                "webUrl": "https://vcomplytechnologies-my.sharepoint.com/personal/anmol_v-comply_com/Documents/VComply Training/Batch-2025/Sayan Bose/Day 7 - Nodejs and CRONS/Summary.docx"
+                            }
+                        },
+                        {
+                            "hitId": "01YFFEY4ZFWFI4IPZ4TZA2PXARDPACEGTN",
+                            "rank": 20,
+                            "summary": "Gan.AI Integration with PolicyOps VComply is introducing a new feature within the PolicyOps module, powered by Gan.AI, that enables policy managers to create, manage, and deliver<ddd/>",
+                            "resource": {
+                                "@odata.type": "#microsoft.graph.driveItem",
+                                "size": 26016,
+                                "fileSystemInfo": {
+                                    "createdDateTime": "2025-01-27T08:45:19Z",
+                                    "lastModifiedDateTime": "2025-01-27T09:57:58Z"
+                                },
+                                "listItem": {
+                                    "@odata.type": "#microsoft.graph.listItem",
+                                    "id": "c451b125-3c3f-419e-a7dc-111bc0221a6d",
+                                    "fields": {}
+                                },
+                                "id": "01YFFEY4ZFWFI4IPZ4TZA2PXARDPACEGTN",
+                                "createdBy": {
+                                    "user": {
+                                        "displayName": "Ayushi Gupta",
+                                        "email": "ayushi@v-comply.com"
+                                    }
+                                },
+                                "createdDateTime": "2025-01-27T08:45:19Z",
+                                "lastModifiedBy": {
+                                    "user": {
+                                        "displayName": "Ayushi Gupta",
+                                        "email": "ayushi@v-comply.com"
+                                    }
+                                },
+                                "lastModifiedDateTime": "2025-01-27T09:57:58Z",
+                                "name": "GTM One Pager.docx",
+                                "parentReference": {
+                                    "driveId": "b!zGbIvbCrnUqdc_FPDtW2gt9NeTcPYCRBvhSG46RDUoFOGq2zBztFS7W2t3hewIOp",
+                                    "id": "01YFFEY44WTQC3P4MLXRFYHO3QP64AOO6N",
+                                    "sharepointIds": {
+                                        "listId": "b3ad1a4e-3b07-4b45-b5b6-b7785ec083a9",
+                                        "listItemId": "340",
+                                        "listItemUniqueId": "c451b125-3c3f-419e-a7dc-111bc0221a6d"
+                                    },
+                                    "siteId": "vcomplytechnologies.sharepoint.com,bdc866cc-abb0-4a9d-9d73-f14f0ed5b682,37794ddf-600f-4124-be14-86e3a4435281"
+                                },
+                                "webUrl": "https://vcomplytechnologies.sharepoint.com/sites/VComplyTechnologiesInc/Shared Documents/Product Marketing/Gan.AI Integration with PolicyOps/GTM One Pager.docx"
+                            }
+                        },
+                        {
+                            "hitId": "01YFFEY42VQLTSYYLBTRDLMTPSYTJ3XMXF",
+                            "rank": 21,
+                            "summary": "Policy Training Videos in VComply’s Policy Module VComply enables policy managers to create and manage custom training videos directly within the PolicyOps module. This integration<ddd/>",
+                            "resource": {
+                                "@odata.type": "#microsoft.graph.driveItem",
+                                "size": 22230,
+                                "fileSystemInfo": {
+                                    "createdDateTime": "2025-01-27T08:45:15Z",
+                                    "lastModifiedDateTime": "2025-01-27T10:06:36Z"
+                                },
+                                "listItem": {
+                                    "@odata.type": "#microsoft.graph.listItem",
+                                    "id": "2ce78255-6161-469c-b64d-f2c4d3bbb2e5",
+                                    "fields": {}
+                                },
+                                "id": "01YFFEY42VQLTSYYLBTRDLMTPSYTJ3XMXF",
+                                "createdBy": {
+                                    "user": {
+                                        "displayName": "Ayushi Gupta",
+                                        "email": "ayushi@v-comply.com"
+                                    }
+                                },
+                                "createdDateTime": "2025-01-27T08:45:15Z",
+                                "lastModifiedBy": {
+                                    "user": {
+                                        "displayName": "Ayushi Gupta",
+                                        "email": "ayushi@v-comply.com"
+                                    }
+                                },
+                                "lastModifiedDateTime": "2025-01-27T10:06:36Z",
+                                "name": "Data Sheet.docx",
+                                "parentReference": {
+                                    "driveId": "b!zGbIvbCrnUqdc_FPDtW2gt9NeTcPYCRBvhSG46RDUoFOGq2zBztFS7W2t3hewIOp",
+                                    "id": "01YFFEY44WTQC3P4MLXRFYHO3QP64AOO6N",
+                                    "sharepointIds": {
+                                        "listId": "b3ad1a4e-3b07-4b45-b5b6-b7785ec083a9",
+                                        "listItemId": "339",
+                                        "listItemUniqueId": "2ce78255-6161-469c-b64d-f2c4d3bbb2e5"
+                                    },
+                                    "siteId": "vcomplytechnologies.sharepoint.com,bdc866cc-abb0-4a9d-9d73-f14f0ed5b682,37794ddf-600f-4124-be14-86e3a4435281"
+                                },
+                                "webUrl": "https://vcomplytechnologies.sharepoint.com/sites/VComplyTechnologiesInc/Shared Documents/Product Marketing/Gan.AI Integration with PolicyOps/Data Sheet.docx"
+                            }
+                        },
+                        {
+                            "hitId": "01YFFEY44UHPBLAAHONVBLKAM5YYKEHMKC",
+                            "rank": 22,
+                            "summary": "Coming Soon – Case Ops! 🚀 Simplify your incident and issue management with Case Ops, our newest module designed to centralize and automate your workflows. Key Benefits: Create<ddd/>",
+                            "resource": {
+                                "@odata.type": "#microsoft.graph.driveItem",
+                                "size": 708596,
+                                "fileSystemInfo": {
+                                    "createdDateTime": "2024-12-26T08:22:12Z",
+                                    "lastModifiedDateTime": "2025-01-07T07:21:34Z"
+                                },
+                                "listItem": {
+                                    "@odata.type": "#microsoft.graph.listItem",
+                                    "id": "b0c23b94-ee00-426d-b501-9dc61443b142",
+                                    "fields": {}
+                                },
+                                "id": "01YFFEY44UHPBLAAHONVBLKAM5YYKEHMKC",
+                                "createdBy": {
+                                    "user": {
+                                        "displayName": "Ayushi Gupta",
+                                        "email": "ayushi@v-comply.com"
+                                    }
+                                },
+                                "createdDateTime": "2024-12-26T08:22:12Z",
+                                "lastModifiedBy": {
+                                    "user": {
+                                        "displayName": "Ayushi Gupta",
+                                        "email": "ayushi@v-comply.com"
+                                    }
+                                },
+                                "lastModifiedDateTime": "2025-01-07T07:21:34Z",
+                                "name": "Beamer - caseops.docx",
+                                "parentReference": {
+                                    "driveId": "b!zGbIvbCrnUqdc_FPDtW2gt9NeTcPYCRBvhSG46RDUoFOGq2zBztFS7W2t3hewIOp",
+                                    "id": "01YFFEY4ZUXUIZ332I6JHY33X6WXLORV6M",
+                                    "sharepointIds": {
+                                        "listId": "b3ad1a4e-3b07-4b45-b5b6-b7785ec083a9",
+                                        "listItemId": "327",
+                                        "listItemUniqueId": "b0c23b94-ee00-426d-b501-9dc61443b142"
+                                    },
+                                    "siteId": "vcomplytechnologies.sharepoint.com,bdc866cc-abb0-4a9d-9d73-f14f0ed5b682,37794ddf-600f-4124-be14-86e3a4435281"
+                                },
+                                "webUrl": "https://vcomplytechnologies.sharepoint.com/sites/VComplyTechnologiesInc/Shared Documents/Product Marketing/One pagers and release notes/Beamer - caseops.docx"
+                            }
+                        },
+                        {
+                            "hitId": "01YFFEY43CNJ4GJNMW6NCL5ILXDFBC5AJK",
+                            "rank": 23,
+                            "summary": "General: Users can make approval workflows in policy settings and assign it to a category. Once the user selects a category only the available approval workflows will show up.",
+                            "resource": {
+                                "@odata.type": "#microsoft.graph.driveItem",
+                                "size": 73872,
+                                "fileSystemInfo": {
+                                    "createdDateTime": "2024-07-09T07:19:56Z",
+                                    "lastModifiedDateTime": "2025-01-28T04:51:37Z"
+                                },
+                                "listItem": {
+                                    "@odata.type": "#microsoft.graph.listItem",
+                                    "id": "64786a62-96b5-44f3-bea1-7719422e812a",
+                                    "fields": {}
+                                },
+                                "id": "01YFFEY43CNJ4GJNMW6NCL5ILXDFBC5AJK",
+                                "createdBy": {
+                                    "user": {
+                                        "displayName": "Ayushi Gupta",
+                                        "email": "ayushi@v-comply.com"
+                                    }
+                                },
+                                "createdDateTime": "2024-07-09T07:19:56Z",
+                                "lastModifiedBy": {
+                                    "user": {
+                                        "displayName": "Ayushi Gupta",
+                                        "email": "ayushi@v-comply.com"
+                                    }
+                                },
+                                "lastModifiedDateTime": "2025-01-28T04:51:37Z",
+                                "name": "demo-disco call notes.docx",
+                                "parentReference": {
+                                    "driveId": "b!zGbIvbCrnUqdc_FPDtW2gt9NeTcPYCRBvhSG46RDUoFOGq2zBztFS7W2t3hewIOp",
+                                    "id": "01YFFEY44LO7PMADQGFBHIWLDALTOAHWMG",
+                                    "sharepointIds": {
+                                        "listId": "b3ad1a4e-3b07-4b45-b5b6-b7785ec083a9",
+                                        "listItemId": "315",
+                                        "listItemUniqueId": "64786a62-96b5-44f3-bea1-7719422e812a"
+                                    },
+                                    "siteId": "vcomplytechnologies.sharepoint.com,bdc866cc-abb0-4a9d-9d73-f14f0ed5b682,37794ddf-600f-4124-be14-86e3a4435281"
+                                },
+                                "webUrl": "https://vcomplytechnologies.sharepoint.com/sites/VComplyTechnologiesInc/Shared Documents/Product Marketing/demo-disco call notes.docx"
+                            }
+                        },
+                        {
+                            "hitId": "01YFFEY4YLZCJ2BYMJ4BE3NX5FL3TBO4TB",
+                            "rank": 24,
+                            "summary": "Prompts for PRD & Product Landing Pages Prompt #1 I am looking to craft a landing page that clearly showcases the value of VComply for organizations that operate with multiple<ddd/>",
+                            "resource": {
+                                "@odata.type": "#microsoft.graph.driveItem",
+                                "size": 29742,
+                                "fileSystemInfo": {
+                                    "createdDateTime": "2024-10-24T04:00:41Z",
+                                    "lastModifiedDateTime": "2024-11-28T07:47:07Z"
+                                },
+                                "listItem": {
+                                    "@odata.type": "#microsoft.graph.listItem",
+                                    "id": "a093c80b-89e1-49e0-b6df-a55ee6177261",
+                                    "fields": {}
+                                },
+                                "id": "01YFFEY4YLZCJ2BYMJ4BE3NX5FL3TBO4TB",
+                                "createdBy": {
+                                    "user": {
+                                        "displayName": "Eric Dates",
+                                        "email": "eric@v-comply.com"
+                                    }
+                                },
+                                "createdDateTime": "2024-10-24T04:00:41Z",
+                                "lastModifiedBy": {
+                                    "user": {
+                                        "displayName": "Ayushi Gupta",
+                                        "email": "ayushi@v-comply.com"
+                                    }
+                                },
+                                "lastModifiedDateTime": "2024-11-28T07:47:07Z",
+                                "name": "Prompts for PRD & Product Landing Pages.docx",
+                                "parentReference": {
+                                    "driveId": "b!zGbIvbCrnUqdc_FPDtW2gt9NeTcPYCRBvhSG46RDUoFOGq2zBztFS7W2t3hewIOp",
+                                    "id": "01YFFEY44LO7PMADQGFBHIWLDALTOAHWMG",
+                                    "sharepointIds": {
+                                        "listId": "b3ad1a4e-3b07-4b45-b5b6-b7785ec083a9",
+                                        "listItemId": "317",
+                                        "listItemUniqueId": "a093c80b-89e1-49e0-b6df-a55ee6177261"
+                                    },
+                                    "siteId": "vcomplytechnologies.sharepoint.com,bdc866cc-abb0-4a9d-9d73-f14f0ed5b682,37794ddf-600f-4124-be14-86e3a4435281"
+                                },
+                                "webUrl": "https://vcomplytechnologies.sharepoint.com/sites/VComplyTechnologiesInc/Shared Documents/Product Marketing/Prompts for PRD & Product Landing Pages.docx"
+                            }
+                        },
+                        {
+                            "hitId": "01YFFEY4YOF5GACQ5HJVHKYM7ZPOK7YNXE",
+                            "rank": 25,
+                            "summary": "Case Ops Module Overview The Case Ops Module is a versatile tool designed to help organizations streamline and automate their incident/issue/complaint/breach management processes<ddd/>",
+                            "resource": {
+                                "@odata.type": "#microsoft.graph.driveItem",
+                                "size": 1449398,
+                                "fileSystemInfo": {
+                                    "createdDateTime": "2024-12-17T09:52:12Z",
+                                    "lastModifiedDateTime": "2025-01-07T07:21:32Z"
+                                },
+                                "listItem": {
+                                    "@odata.type": "#microsoft.graph.listItem",
+                                    "id": "014c2f0e-a743-4e4d-ac33-f97b95fc36e4",
+                                    "fields": {}
+                                },
+                                "id": "01YFFEY4YOF5GACQ5HJVHKYM7ZPOK7YNXE",
+                                "createdBy": {
+                                    "user": {
+                                        "displayName": "Ayushi Gupta",
+                                        "email": "ayushi@v-comply.com"
+                                    }
+                                },
+                                "createdDateTime": "2024-12-17T09:52:12Z",
+                                "lastModifiedBy": {
+                                    "user": {
+                                        "displayName": "Ayushi Gupta",
+                                        "email": "ayushi@v-comply.com"
+                                    }
+                                },
+                                "lastModifiedDateTime": "2025-01-07T07:21:32Z",
+                                "name": "Case ops for GTM.docx",
+                                "parentReference": {
+                                    "driveId": "b!zGbIvbCrnUqdc_FPDtW2gt9NeTcPYCRBvhSG46RDUoFOGq2zBztFS7W2t3hewIOp",
+                                    "id": "01YFFEY4ZUXUIZ332I6JHY33X6WXLORV6M",
+                                    "sharepointIds": {
+                                        "listId": "b3ad1a4e-3b07-4b45-b5b6-b7785ec083a9",
+                                        "listItemId": "324",
+                                        "listItemUniqueId": "014c2f0e-a743-4e4d-ac33-f97b95fc36e4"
+                                    },
+                                    "siteId": "vcomplytechnologies.sharepoint.com,bdc866cc-abb0-4a9d-9d73-f14f0ed5b682,37794ddf-600f-4124-be14-86e3a4435281"
+                                },
+                                "webUrl": "https://vcomplytechnologies.sharepoint.com/sites/VComplyTechnologiesInc/Shared Documents/Product Marketing/One pagers and release notes/Case ops for GTM.docx"
+                            }
+                        }
+                    ],
+                    "total": 105,
+                    "moreResultsAvailable": true
+                }
+            ]
+        }
+    ],
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.searchResponse)"
+}

@@ -29,46 +29,36 @@
       </p>
 
       <button type="submit" id="linkAcc">
-        Link to your account
+        LINK YOUR ACCOUNT
+      </button>
+      <div id="policyContainer">
+
+      </div>
+
+      <button type="submit" id="syncNow">
+        SYNC NOW
       </button>
       
+      <!-- Create a policy or update an existing policy -->
+      <div class="form">
+        <form action="">
+          <div class="form-fields">
+            <label for="policy_name">Policy Name</label>
+            <input type="text" id="policy_name" name="policy_name" required>
+          </div>
+          <div class="form-fields">
+            <label for="policy_category">Policy Category</label>
+            <input type="text" id="policy_category" name="policy_category" required>
+          </div>
+          <div class="form-fields">
+            <label for="policy_owner">Policy Owner</label>
+            <input type="text" id="policy_owner" name="policy_owner" required>
+          </div>
+          <button type="submit">Create Policy</button>
+        </form>
+      </div>
+
     </div>
   </body>
 </html>
 
-<!--
-<div class="sync-btn-container">
-        <button type="submit" id="sync">Sync Policy</button>
-      </div>
-      <div class="getEmail-btn-container">
-        <button type="submit" id="emailFetch">Fetch User Email</button>
-      </div>
-      <div id="policies_container">
-      </div>
-
-      <div class="message">
-        <p id="sync_message"></p>
-      </div>
-
-      <div class="policy-list-container">
-        <ul id="policy-list"></ul>
-      </div>
-
-      <div class="form-container">
-        <form action="">
-          <div class="owner-container">
-            <label for="policyOwner">Name of the Owner</label>
-            <input type="text" id="policyOwner" />
-          </div>
-          <div class="policy-container">
-            <label for="policyName">Policy Name</label>
-            <input type="text" id="policyName" />
-          </div>
-          <button type="submit" id="create">Create Policy</button>
-        </form>
-      </div>
-
-      <div class="policy-create-error" style="display: none;">
-        <p id="error-message"></p>
-      </div>
--->

@@ -4,7 +4,9 @@
     padding: 0;
 }
 
+/* --------- INDEX PAGE ----------- */
 .container {
+    padding: 10px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -16,15 +18,13 @@
     font-family:Arial, Helvetica, sans-serif;
     color: rgb(0, 88, 151);
     font-weight: 600;
-}
-.form-container {
-    padding: 20px;
+    font-size: 16px;
 }
 
 .brand-description {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
-    font-size: 16px;
+    font-size: 13px;
     color: rgba(0, 0, 0, 0.475);
 }
 
@@ -38,12 +38,38 @@
     color: white;
     cursor: pointer;
 }
-.owner-container, .policy-container {
+#syncNow {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 10px 20px;
+    background-color: rgb(0, 93, 181);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* ------------ FORM COMPONENT -------------- */
+.form-fields {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
     margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.error-message {
-    color: red;
+
+.form-fields > input[type="text"] {
+    padding: 8px 10px
+}
+
+form > button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 10px 20px;
+    background-color: rgb(0, 93, 181);
+    border: none;
+    color: white;
+    cursor: pointer;
 }
