@@ -147,6 +147,7 @@ async function fetchCurrentWordFiles(accessToken) {
 async function saveDocumentCredentials() {
   const links = await createShareableLinkForCurrentFile();
   console.log(links);
+  console.log(selectedPolicyId);
   try {
     const payLoad = {
       editLink: links.editLink,
@@ -166,6 +167,13 @@ async function saveDocumentCredentials() {
 
     const responseData = await response.json();
     console.log("Successfully saved document credentials", responseData);
+
+    // saving the current document
+    await Word.run(async (context) => {
+      context.document.save();
+      await context.sync();
+      console.log("Document saved successfully.");
+    });
   } catch (err) {
     console.error(err);
   }
