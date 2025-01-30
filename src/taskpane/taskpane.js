@@ -198,7 +198,7 @@ async function LinkAccount(accessToken) {
             });
 
             const accessToken = tokenResponse.accessToken;
-
+            console.log(accessToken);
             const endpoint = `https://graph.microsoft.com/v1.0/me`;
 
             const response = await fetch(endpoint, {
@@ -251,7 +251,7 @@ async function generateShareableLink(itemId,type) {
       },
       body: JSON.stringify({
         type: `${type}`, // or "edit" depending on the type of link you want
-        scope: "organization", // or "organization" depending on the scope of the link
+        scope: "anonymous", // or "organization" depending on the scope of the link
       }),
     });
 
