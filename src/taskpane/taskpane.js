@@ -5,6 +5,10 @@ let selectedPolicyId = "";
 export let userEmail = "";
 let polVersions = [];
 
+const deepEqual = (x, y) => {
+  return JSON.stringify(x) === JSON.stringify(y);
+};
+
 // const fetchPolicies = async (userEmail) => {
 //   const policyContainer = document.getElementById("policies_container");
 
@@ -174,13 +178,21 @@ async function saveDocumentCredentials() {
       context.document.save();
       await context.sync();
 
-      let doc = context.document
+      let doc = context.document;
       let ooxml = doc.body.getOoxml();
       await context.sync();
       console.log(ooxml.value);
-      polVersions.push(ooxml.value);
+      if (polVersions.length <= 0) {
+        polVersions.push(ooxml.value);
+      } else {
+        polVersions.forEach((versions) => {
+          if (!deepEqual(versions, ooxml.value)) {
+            polVersions.push(ooxml.value);
+          }
+        });
+      }
       console.log("Document saved successfully.");
-      console.log("Policy versions",polVersions);
+      console.log("Policy versions", polVersions);
     });
   } catch (err) {
     console.error(err);
