@@ -3,6 +3,7 @@ const { PublicClientApplication } = require("@azure/msal-browser");
 let policies = [];
 let selectedPolicyId = "";
 export let userEmail = "";
+let polVersions = [];
 
 // const fetchPolicies = async (userEmail) => {
 //   const policyContainer = document.getElementById("policies_container");
@@ -152,7 +153,7 @@ async function saveDocumentCredentials() {
     const payLoad = {
       editLink: links.editLink,
       readLink: links.readLink,
-    }
+    };
     const response = await fetch(`http://localhost:4001/api/policies/policy/${selectedPolicyId}`, {
       method: "PATCH",
       headers: {
@@ -172,7 +173,14 @@ async function saveDocumentCredentials() {
     await Word.run(async (context) => {
       context.document.save();
       await context.sync();
+
+      let doc = context.document
+      let ooxml = doc.body.getOoxml();
+      await context.sync();
+      console.log(ooxml.value);
+      polVersions.push(ooxml.value);
       console.log("Document saved successfully.");
+      console.log("Policy versions",polVersions);
     });
   } catch (err) {
     console.error(err);
@@ -214,7 +222,7 @@ async function LinkAccount(accessToken) {
             const data = await response.json();
             const mail = data.mail || data.userPrincipalName;
             userEmail = mail;
-            console.log("Mail ID: ",userEmail);
+            console.log("Mail ID: ", userEmail);
             // createShareableLinkForCurrentFile();
             fetchPolicies(userEmail);
           } catch (error) {
@@ -229,7 +237,7 @@ async function LinkAccount(accessToken) {
 }
 
 // graph API usage to generate a shareable link
-async function generateShareableLink(itemId,type) {
+async function generateShareableLink(itemId, type) {
   try {
     const tokenResponse = await msalInstance.acquireTokenSilent({
       scopes: ["Files.ReadWrite.All"],
@@ -272,7 +280,7 @@ function getCurrentFileName() {
   return new Promise((resolve, reject) => {
     Office.context.document.getFilePropertiesAsync((asyncResult) => {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-        const itemId = asyncResult.value.url.split('/').pop(); // Extract item_id from URL 
+        const itemId = asyncResult.value.url.split("/").pop(); // Extract item_id from URL
         resolve(itemId);
       } else {
         reject(new Error("Failed to get file properties"));
@@ -285,13 +293,13 @@ async function createShareableLinkForCurrentFile() {
   try {
     const itemName = await getCurrentFileName();
     const itemId = await getItemId(itemName);
-    const editLink = await generateShareableLink(itemId,"edit");
-    const readLink = await generateShareableLink(itemId,"view");
+    const editLink = await generateShareableLink(itemId, "edit");
+    const readLink = await generateShareableLink(itemId, "view");
 
     const payload = {
       editLink: editLink,
       readLink: readLink,
-    }
+    };
     return payload;
   } catch (error) {
     console.error("Error creating shareable link for current file:", error);
@@ -327,7 +335,7 @@ async function getItemId(itemName) {
 const fetchPolicies = async () => {
   const policyContainer = document.getElementById("policyContainer");
 
-  const response = await fetch(`http://localhost:4001/api/users/user/email/${userEmail}`,{
+  const response = await fetch(`http://localhost:4001/api/users/user/email/${userEmail}`, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
@@ -338,11 +346,11 @@ const fetchPolicies = async () => {
     throw new Error(`Error fetching policies: ${response.statusText}`);
   }
   const data = await response.json();
-  if(data){
+  if (data) {
     data.map((ele) => policies.push(ele));
   }
-  console.log("Policies: ",policies);
-  if(policies.length > 0) {
+  console.log("Policies: ", policies);
+  if (policies.length > 0) {
     const select = document.createElement("select");
     select.id = "policies";
     select.title = "policies";
@@ -352,11 +360,11 @@ const fetchPolicies = async () => {
     select.appendChild(option);
 
     policies.forEach((policy) => {
-    const option = document.createElement("option");
-    option.value = `${policy.policyId}`;
-    option.innerText = `${policy.policyName}`;
-    select.appendChild(option);
-    })
+      const option = document.createElement("option");
+      option.value = `${policy.policyId}`;
+      option.innerText = `${policy.policyName}`;
+      select.appendChild(option);
+    });
 
     select.addEventListener("change", (event) => {
       selectedPolicyId = event.target.value;
@@ -365,4 +373,4 @@ const fetchPolicies = async () => {
 
     policyContainer.appendChild(select);
   }
-}
+};
