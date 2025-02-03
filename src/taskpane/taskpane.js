@@ -1,4 +1,5 @@
 const { PublicClientApplication } = require("@azure/msal-browser");
+const compareXmlContent = require("./compareXML");
 
 let policies = [];
 let selectedPolicyId = "";
@@ -182,17 +183,15 @@ async function saveDocumentCredentials() {
       let ooxml = doc.body.getOoxml();
       await context.sync();
       console.log(ooxml.value);
-      if (polVersions.length <= 0) {
+      
+      // pushing a valid XML into the polVersions (array of XMLs)
+      if (!polVersions.some(version => compareXmlContent(version, ooxml.value))) {
         polVersions.push(ooxml.value);
+        console.log("Document saved successfully.");
+        console.log("Policy versions", polVersions);
       } else {
-        polVersions.forEach((versions) => {
-          if (!deepEqual(versions, ooxml.value)) {
-            polVersions.push(ooxml.value);
-          }
-        });
+        console.log("The value already exists in the policy versions.");
       }
-      console.log("Document saved successfully.");
-      console.log("Policy versions", polVersions);
     });
   } catch (err) {
     console.error(err);
