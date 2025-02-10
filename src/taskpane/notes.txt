@@ -1,0 +1,16 @@
+1. Add In Name: VCompy Policy Builder
+2. Email is not an option to fetch the details of the user from the Vcomply.
+    User token authorization should be used.
+    MS Word login would be same for all the emails from the VComply account.
+    
+
+    -- How to connect the Addin with the VComply account.
+    -- Research how to login from the web app and come back to the Desktop app.
+
+    -- Need to figure out the communication between the WebApp and the Add in
+
+    -- the token for the add in gets expired, so we have to link it.
+    
+    -- Finalization: Which app (MSWord VS VComply)
+
+    -- detecting the deep Links

@@ -1,9 +1,13 @@
 const { PublicClientApplication } = require("@azure/msal-browser");
-const compareXmlContent = require("./compareXML");
+const compareXml = require("./compareXML");
+const compareXmlTextContent = require("./compareContent");
+const compareWordXMLText = require("./compareTextContent");
 
 let policies = [];
 let selectedPolicyId = "";
 export let userEmail = "";
+let passkey = "";
+let sessionKey = "";
 let polVersions = [];
 
 const deepEqual = (x, y) => {
@@ -47,7 +51,23 @@ const deepEqual = (x, y) => {
 //     policyContainer.appendChild(select);
 //   }
 // }
+async function fetchPasskey() {
+  try {
+    const response = await fetch(`http://localhost:3001/${userEmail}`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
 
+    const data = await response.json();
+    passkey = data.passkey;
+  } catch (err) {
+    console.error();
+  }
+}
+
+async function validatePasskey() {}
 const msalConfig = {
   auth: {
     clientId: "d2cbb35c-ca9b-4927-809e-6deb767ab582",
@@ -66,6 +86,9 @@ Office.onReady((info) => {
   if (info.host === Office.HostType.Word) {
     document.getElementById("linkAcc").onclick = LinkAccount;
     document.getElementById("syncNow").onclick = saveDocumentCredentials;
+    document.getElementById('verify').onclick = verifyPage;
+
+    setInterval(validateUser, 300000);
   }
 });
 
@@ -182,20 +205,63 @@ async function saveDocumentCredentials() {
       let doc = context.document;
       let ooxml = doc.body.getOoxml();
       await context.sync();
-      console.log(ooxml.value);
-      
+      // console.log(ooxml.value);
+
       // pushing a valid XML into the polVersions (array of XMLs)
-      if (!polVersions.some(version => compareXmlContent(version, ooxml.value))) {
+      if (!polVersions.some((version) => compareWordXMLText(version, ooxml.value))) {
         polVersions.push(ooxml.value);
         console.log("Document saved successfully.");
-        console.log("Policy versions", polVersions);
       } else {
         console.log("The value already exists in the policy versions.");
       }
+      // polVersions.push(ooxml.value);
+      console.log("Policy Version: ", polVersions);
     });
   } catch (err) {
     console.error(err);
   }
+}
+
+async function verifyPage() {
+  const message = document.getElementById('checkValidity');
+  const passkey = document.getElementById('passkey').value;
+  console.log(passkey);
+  const payload = {
+    email: userEmail,
+    passkey: passkey,
+  }
+  const response = await fetch("http://localhost/3001/api/passkeys/verify",{
+    method: "POST",
+    headers: {
+      "Content-Type" : "application/json"
+    },
+    body: JSON.stringify(payload)
+  });
+
+  const data = await response.json();
+  console.log(data);
+  if(data.valid){
+    sessionKey = data.session;
+  } else {
+    message.innerText = "Invalid User"
+  }
+}
+
+async function validateUser() {
+  const message = document.getElementById('checkValidity');
+  const payload = {
+    email: userEmail
+  };
+  const response = await fetch('http://localhost:3001/api/passkeys/validate', {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(payload)
+  });
+
+  const data = await response.json();
+  if(sessionKey !== data.sessionKey) message.inertText = "Please Login again";
 }
 
 async function LinkAccount(accessToken) {
@@ -234,8 +300,10 @@ async function LinkAccount(accessToken) {
             const mail = data.mail || data.userPrincipalName;
             userEmail = mail;
             console.log("Mail ID: ", userEmail);
-            // createShareableLinkForCurrentFile();
-            fetchPolicies(userEmail);
+
+            // redirecting to the login page
+            window.open(`https://localhost:4200/login?email=${userEmail}`, "_blank", "width=600,height=400");
+
           } catch (error) {
             console.error("Authentication error:", error);
           }

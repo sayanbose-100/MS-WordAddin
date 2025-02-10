@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VComply Policy Builder</title>
+
+    <!-- Office JavaScript API -->
+    <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+
+    <!-- For more information on Fluent UI, visit https://developer.microsoft.com/fluentui#/. -->
+    <link
+      rel="stylesheet"
+      href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css"
+    />
+
+    <!-- Template styles -->
+    <link href="taskpane.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <img src="../../assets/vcomply-logo.svg" alt="logo">
+      <h2 class="brand-title">Policy Ops</h2>
+
+      <p class="brand-description">
+        Use VComply's Policy Builder Add-in to draft, edit and save your policies using MS Word Online.
+      </p>
+
+      <form action="" method="POST">
+        <div>
+            <label for="passkeyInput">Enter the passkey</label>
+            <input type="text" id="passkeyInput" required>
+        </div>
+        <button type="submit">Verify Passkey</button>
+      </form>
+
+    </div>
+  </body>
+</html>
+

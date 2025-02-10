@@ -11,6 +11,9 @@
   <SupportUrl DefaultValue="https://www.contoso.com/help"/>
   <AppDomains>
     <AppDomain>https://www.contoso.com</AppDomain>
+    <AppDomain>https://127.0.0.1</AppDomain>
+    <AppDomain>https://127.0.0.1:4200</AppDomain>
+    <AppDomain>https://127.0.0.1:4200/login</AppDomain>
   </AppDomains>
   <Hosts>
     <Host Name="Document"/>
