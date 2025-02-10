@@ -51,23 +51,7 @@ const deepEqual = (x, y) => {
 //     policyContainer.appendChild(select);
 //   }
 // }
-async function fetchPasskey() {
-  try {
-    const response = await fetch(`http://localhost:3001/${userEmail}`, {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
 
-    const data = await response.json();
-    passkey = data.passkey;
-  } catch (err) {
-    console.error();
-  }
-}
-
-async function validatePasskey() {}
 const msalConfig = {
   auth: {
     clientId: "d2cbb35c-ca9b-4927-809e-6deb767ab582",
@@ -230,7 +214,7 @@ async function verifyPage() {
     email: userEmail,
     passkey: passkey,
   }
-  const response = await fetch("http://localhost/3001/api/passkeys/verify",{
+  const response = await fetch("http://localhost:3001/api/passkeys/verify",{
     method: "POST",
     headers: {
       "Content-Type" : "application/json"
