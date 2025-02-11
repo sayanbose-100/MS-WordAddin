@@ -71,8 +71,6 @@ Office.onReady((info) => {
     document.getElementById("linkAcc").onclick = LinkAccount;
     document.getElementById("syncNow").onclick = saveDocumentCredentials;
     document.getElementById('verify').onclick = verifyPage;
-
-    setInterval(validateUser, 300000);
   }
 });
 
@@ -225,18 +223,22 @@ async function verifyPage() {
   const data = await response.json();
   console.log(data);
   if(data.valid){
-    sessionKey = data.session;
+    sessionKey = data.token;
+    console.log("Session Key: ", sessionKey);
+    setInterval(validateUser, 3000);
   } else {
     message.innerText = "Invalid User"
   }
 }
 
 async function validateUser() {
+  console.log("Inside the validation function");
   const message = document.getElementById('checkValidity');
   const payload = {
-    email: userEmail
+    email: userEmail,
+    jwt: sessionKey
   };
-  const response = await fetch('http://localhost:3001/api/passkeys/validate', {
+  const response = await fetch('http://localhost:3001/api/passkeys/validate-session', {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
@@ -245,7 +247,7 @@ async function validateUser() {
   });
 
   const data = await response.json();
-  if(sessionKey !== data.sessionKey) message.inertText = "Please Login again";
+  if(!data.valid) message.inertText = "Please Login again";
 }
 
 async function LinkAccount(accessToken) {
