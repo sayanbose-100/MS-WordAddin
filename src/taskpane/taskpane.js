@@ -164,7 +164,7 @@ async function saveDocumentCredentials() {
       editLink: links.editLink,
       readLink: links.readLink,
     };
-    const response = await fetch(`http://localhost:4001/api/policies/policy/${selectedPolicyId}`, {
+    const response = await fetch(`http://localhost:3001/api/policies/policy/${selectedPolicyId}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -225,6 +225,7 @@ async function verifyPage() {
   if(data.valid){
     sessionKey = data.token;
     console.log("Session Key: ", sessionKey);
+    fetchPolicies();
     setInterval(validateUser, 3000);
   } else {
     message.innerText = "Invalid User"
@@ -289,6 +290,11 @@ async function LinkAccount(accessToken) {
 
             // redirecting to the login page
             window.open(`https://localhost:4200/login?email=${userEmail}`, "_blank", "width=600,height=400");
+            // if(sessionKey) {
+            //   console.log(sessionKey);
+            //   fetchPolicies();
+            // }
+            // fetchPolicies();
 
           } catch (error) {
             console.error("Authentication error:", error);
@@ -400,7 +406,7 @@ async function getItemId(itemName) {
 const fetchPolicies = async () => {
   const policyContainer = document.getElementById("policyContainer");
 
-  const response = await fetch(`http://localhost:4001/api/users/user/email/${userEmail}`, {
+  const response = await fetch(`http://localhost:3001/api/users/user/email/${userEmail}`, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
