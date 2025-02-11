@@ -248,7 +248,7 @@ async function validateUser() {
   });
 
   const data = await response.json();
-  if(!data.valid) message.inertText = "Please Login again";
+  if(!data.valid) message.innerText = "Please Login again";
 }
 
 async function LinkAccount(accessToken) {
@@ -295,6 +295,7 @@ async function LinkAccount(accessToken) {
             //   fetchPolicies();
             // }
             // fetchPolicies();
+            
 
           } catch (error) {
             console.error("Authentication error:", error);
